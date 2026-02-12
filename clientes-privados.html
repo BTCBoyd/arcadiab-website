@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Privados - ArcadiaB</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QS7E2R8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E7QS7E2R8Y');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/#productos" class="nav-link">Productos</a>
+                    <a href="/empresas" class="nav-link">Empresas</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/nosotros" class="nav-link">Nosotros</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" title="English version coming soon"><span class="lang-inactive">EN</span></span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Iniciar Sesión</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Regístrate</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <div class="card-tag" style="display: inline-block; margin-bottom: 1rem;">CLIENTES PRIVADOS</div>
+                <h1 class="h1" style="font-size: 3.5rem; margin-bottom: 1.5rem;">
+                    Soluciones Bitcoin para tu patrimonio personal
+                </h1>
+                <p class="lead" style="font-size: 1.3rem; max-width: 720px; margin: 0 auto 3rem;">
+                    Servicios personalizados para inversionistas, profesionistas y holders que buscan 
+                    proteger y hacer crecer su riqueza con Bitcoin. Desde $50,000 MXN.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#servicios" class="btn btn-primary btn-lg">Conoce los Servicios</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-ghost btn-lg">Abre tu cuenta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Para quién es este servicio?</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">👔</div>
+                    <h3 class="card-title">Profesionistas</h3>
+                    <p class="card-copy">
+                        Médicos, abogados, consultores, emprendedores. Generas buen ingreso y quieres proteger 
+                        tu patrimonio contra la devaluación del peso.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">💼</div>
+                    <h3 class="card-title">Inversionistas</h3>
+                    <p class="card-copy">
+                        Tienes experiencia en mercados financieros. Buscas diversificación en activos no correlacionados 
+                        con alta convicción en Bitcoin.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">₿</div>
+                    <h3 class="card-title">Bitcoin Holders</h3>
+                    <p class="card-copy">
+                        Ya tienes Bitcoin (1-10 BTC). Necesitas custodia profesional, liquidez sin vender, 
+                        o estrategias avanzadas de acumulación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios para Clientes Privados</h2>
+            </div>
+            
+            <div class="grid-2" style="gap: 2rem;">
+                <!-- Service 1 -->
+                <div class="card" style="border-left: 4px solid var(--gold);">
+                    <h3 class="h3">Acumulación de Bitcoin</h3>
+                    <p style="margin: 1rem 0;">
+                        Estrategias de compra inteligentes para construir tu posición en Bitcoin:
+                    </p>
+                    <ul style="margin-bottom: 1.5rem;">
+                        <li><strong>Compras recurrentes (DCA):</strong> Automatiza tu acumulación mensual</li>
+                        <li><strong>Tarjeta cash back:</strong> Gana 1% en Bitcoin en cada compra diaria</li>
+                        <li><strong>Stacker Inmobiliario:</strong> Usa tu inmueble para comprar Bitcoin</li>
+                    </ul>
+                    <a href="/productos/compras-recurrentes" class="btn-text">Ver estrategias de acumulación <span class="arrow">→</span></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card" style="border-left: 4px solid var(--gold);">
+                    <h3 class="h3">Liquidez sin vender</h3>
+                    <p style="margin: 1rem 0;">
+                        Accede a pesos o dólares conservando tu exposición a Bitcoin:
+                    </p>
+                    <ul style="margin-bottom: 1.5rem;">
+                        <li><strong>Préstamos MXN:</strong> Hasta $500k MXN, tasa desde 18% anual</li>
+                        <li><strong>Préstamos USD:</strong> Desde $3k USD, tasa desde 12% anual</li>
+                        <li><strong>LTV conservador:</strong> Máximo 50% para protección contra volatilidad</li>
+                    </ul>
+                    <a href="/productos/prestamos-mxn" class="btn-text">Ver préstamos <span class="arrow">→</span></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card" style="border-left: 4px solid var(--gold);">
+                    <h3 class="h3">Custodia Profesional</h3>
+                    <p style="margin: 1rem 0;">
+                        Almacenamiento seguro con protección institucional y legal:
+                    </p>
+                    <ul style="margin-bottom: 1.5rem;">
+                        <li><strong>Multisig 2-de-3:</strong> Custodia multifirma de grado institucional</li>
+                        <li><strong>Fideicomiso ASOFOM:</strong> Protección legal bajo regulación mexicana</li>
+                        <li><strong>Gratis hasta 1 BTC:</strong> Sin comisiones de custodia</li>
+                    </ul>
+                    <a href="/productos/billetera" class="btn-text">Ver custodia <span class="arrow">→</span></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card" style="border-left: 4px solid var(--gold);">
+                    <h3 class="h3">Estrategias Avanzadas</h3>
+                    <p style="margin: 1rem 0;">
+                        Para holders experimentados con alta convicción:
+                    </p>
+                    <ul style="margin-bottom: 1.5rem;">
+                        <li><strong>B2X Leverage:</strong> Apalancamiento 2x conservador sobre Bitcoin</li>
+                        <li><strong>Gestión de LTV:</strong> Optimiza tu ratio préstamo-colateral</li>
+                        <li><strong>Asesoría fiscal:</strong> Optimización de impuestos sobre Bitcoin</li>
+                    </ul>
+                    <a href="/productos/b2x" class="btn-text">Ver B2X <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why ArcadiaB -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por qué elegir ArcadiaB</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="h4">🏛️ Única regulación ASOFOM</h3>
+                    <p>
+                        Somos la única empresa de Bitcoin en México con certificación ASOFOM. Tu Bitcoin está 
+                        protegido bajo fideicomiso legal con auditorías trimestrales.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">⏱️ 7+ años de experiencia</h3>
+                    <p>
+                        Operando desde 2017. Hemos sobrevivido múltiples ciclos de mercado, crisis de exchanges, 
+                        y mantuvimos el 100% de fondos de clientes seguros.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">🔐 Seguridad institucional</h3>
+                    <p>
+                        Custodia multifirma con llaves distribuidas geográficamente. Cold storage de grado 
+                        institucional. Sin punto único de falla.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">🎓 Educación incluida</h3>
+                    <p>
+                        Acceso a AprenderBitcoin (curso gratuito), Capital Duro (investigación macro), 
+                        y Maxi (IA nativa de Bitcoin). Entiendes en qué inviertes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cómo empezar</h2>
+            </div>
+            
+            <div class="steps-horizontal">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="h4">Abre tu cuenta</h3>
+                    <p>Regístrate en menos de 5 minutos. Solo necesitas tu email, INE y comprobante de domicilio.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="h4">Consulta inicial</h3>
+                    <p>Hablamos contigo para entender tus objetivos. Te recomendamos la estrategia que mejor se ajuste.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="h4">Activa servicios</h3>
+                    <p>Configuras tus productos (acumulación, préstamos, custodia) y empiezas a construir tu estrategia Bitcoin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="h2">¿Listo para proteger tu patrimonio con Bitcoin?</h2>
+                <p class="lead">Únete a cientos de inversionistas mexicanos que confían en ArcadiaB.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                        Abre tu cuenta
+                    </a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+                        ¿Tienes preguntas? Pregúntale a Maxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text mb-md">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p class="text-secondary">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Productos</h4>
+                    <a href="/productos/compra-venta">Compra y Venta</a>
+                    <a href="/productos/compras-recurrentes">Compras Recurrentes</a>
+                    <a href="/productos/prestamos-mxn">Préstamos MXN</a>
+                    <a href="/productos/prestamos-usd">Préstamos USD</a>
+                    <a href="/productos/b2x">B2X Leverage</a>
+                    <a href="/productos/stacker-inmobiliario">Stacker Inmobiliario</a>
+                    <a href="/productos/tarjeta-btc">Tarjeta BTC</a>
+                    <a href="/productos/billetera">Billetera</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Servicios</h4>
+                    <a href="/clientes-privados">Clientes Privados</a>
+                    <a href="/empresas">Empresas</a>
+                    <a href="/empresas#tesoreria">Tesorería BTC</a>
+                    <a href="/empresas#custodia">Custodia</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Aprende</h4>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">AprenderBitcoin</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">Pregúntale a Maxi</a>
+                    <a href="/#newsletter">Newsletter</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Empresa</h4>
+                    <a href="/nosotros">Nosotros</a>
+                    <a href="/seguridad">Seguridad</a>
+                    <a href="/regulacion">Regulación</a>
+                    <a href="/prensa">Prensa</a>
+                    <a href="/contacto">Soporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted">
+                    © 2026 ArcadiaB. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="/privacidad">Aviso de Privacidad</a>
+                    <a href="/terminos">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+</body>
+</html>
