@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billetera Bitcoin - Custodia Segura - ArcadiaB</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QS7E2R8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E7QS7E2R8Y');
+    </script>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/#productos" class="nav-link">Productos</a>
+                    <a href="/empresas" class="nav-link">Empresas</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/nosotros" class="nav-link">Nosotros</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" title="English version coming soon"><span class="lang-inactive">EN</span></span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Iniciar Sesión</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Regístrate</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="product-hero">
+                <div class="product-hero-content">
+                    <div class="card-tag">BILLETERA</div>
+                    <h1 class="h1">Custodia segura para tu Bitcoin</h1>
+                    <p class="lead">
+                        Almacena tu Bitcoin con custodia multifirma de grado institucional. Regulada bajo 
+                        fideicomiso ASOFOM. Tu Bitcoin, tu control, nuestra infraestructura de seguridad.
+                    </p>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                            Comienza ahora
+                        </a>
+                        <a href="#como-funciona" class="btn btn-ghost btn-lg">
+                            Cómo funciona
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-btc-balance.jpg" alt="Billetera Bitcoin ArcadiaB" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="como-funciona" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cómo Funciona</h2>
+            </div>
+            
+            <div class="steps-horizontal">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="h4">Crea tu wallet</h3>
+                    <p>Regístrate y activa tu billetera ArcadiaB. Obtienes una dirección Bitcoin única para recibir fondos.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="h4">Deposita Bitcoin</h3>
+                    <p>Transfiere Bitcoin desde cualquier exchange o wallet. Tu Bitcoin entra a custodia multifirma automáticamente.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="h4">Gestiona y retira</h3>
+                    <p>Consulta tu balance en tiempo real. Retira a cualquier dirección Bitcoin cuando quieras. Tú mantienes el control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Detalles Clave</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="h4">🔐 Custodia Multifirma</h3>
+                    <ul>
+                        <li>Esquema 2-de-3 multisig</li>
+                        <li>Llaves distribuidas geográficamente</li>
+                        <li>Cold storage de grado institucional</li>
+                        <li>Sin punto único de falla</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">🏛️ Protección Legal</h3>
+                    <ul>
+                        <li>Fideicomiso regulado ASOFOM</li>
+                        <li>Segregación legal de activos</li>
+                        <li>Auditorías trimestrales independientes</li>
+                        <li>Operando bajo regulación desde 2017</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">💰 Costos Transparentes</h3>
+                    <ul>
+                        <li>Custodia: Gratis hasta 1 BTC</li>
+                        <li>Depósitos: Sin comisión</li>
+                        <li>Retiros: Solo costo de red Bitcoin</li>
+                        <li>Sin comisiones ocultas</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">📱 Acceso y Control</h3>
+                    <ul>
+                        <li>App móvil iOS y Android</li>
+                        <li>Balance en tiempo real</li>
+                        <li>Retiros instantáneos 24/7</li>
+                        <li>Historial completo de transacciones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Bridge -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(212, 168, 67, 0.1) 0%, rgba(212, 168, 67, 0.05) 100%);">
+        <div class="container">
+            <div class="content-bridge">
+                <div class="content-bridge-icon">🛡️</div>
+                <h2 class="h3">¿Cómo protegemos tu Bitcoin?</h2>
+                <p class="lead">Infraestructura de seguridad de nivel institucional, auditorías regulatorias, y protección legal bajo fideicomiso ASOFOM.</p>
+                <a href="/seguridad" class="btn btn-primary">
+                    Conoce nuestra seguridad
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+            
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué es custodia multifirma (multisig)?</summary>
+                    <div class="faq-answer">
+                        <p>Multisig significa que se requieren múltiples llaves privadas para mover Bitcoin. Usamos un esquema 2-de-3: existen 3 llaves, pero solo se necesitan 2 para autorizar una transacción. Esto elimina puntos únicos de falla y maximiza seguridad.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿ArcadiaB puede tomar mi Bitcoin sin mi autorización?</summary>
+                    <div class="faq-answer">
+                        <p>No. El esquema multifirma requiere tu autorización para cualquier movimiento. Además, tu Bitcoin está bajo fideicomiso ASOFOM con segregación legal. No podemos usar, prestar, ni re-hipotecar tu Bitcoin. Está protegido tanto técnica como legalmente.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué pasa si ArcadiaB cierra o quiebra?</summary>
+                    <div class="faq-answer">
+                        <p>Tu Bitcoin está segregado en un fideicomiso legal, separado de los activos de la empresa. En caso de quiebra, tu Bitcoin no forma parte de la masa concursal. El fideicomiso garantiza que recuperas tu Bitcoin sin importar qué pase con ArcadiaB.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cobran comisión por custodia?</summary>
+                    <div class="faq-answer">
+                        <p>La custodia es gratuita hasta 1 BTC. Para montos mayores, cobramos una pequeña comisión anual (0.5% sobre el excedente). Depósitos son gratis, retiros solo cobran el costo de red Bitcoin (variable según congestión).</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Puedo usar mi wallet para préstamos o productos ArcadiaB?</summary>
+                    <div class="faq-answer">
+                        <p>Sí. Tu billetera ArcadiaB se integra con todos nuestros productos: compras recurrentes, préstamos MXN/USD, B2X leverage, tarjeta cash back, etc. Un solo lugar para gestionar todo tu stack de Bitcoin.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cómo se compara con self-custody (mi propia wallet)?</summary>
+                    <div class="faq-answer">
+                        <p>Self-custody te da control total, pero asumes todo el riesgo técnico (perder llaves, malware, errores). Nuestra custodia multisig ofrece seguridad institucional + protección legal ASOFOM, ideal para holders que priorizan seguridad profesional sobre control absoluto. Ambos enfoques son válidos según tu perfil.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Sell -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">También te puede interesar</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-tag">COMPRA Y VENTA</div>
+                    <h3 class="card-title">Compra Bitcoin para tu wallet</h3>
+                    <p class="card-copy">
+                        Compra Bitcoin desde cualquier banco mexicano y recíbelo automáticamente en tu billetera ArcadiaB.
+                    </p>
+                    <a href="/productos/compra-venta" class="btn-text">
+                        Conoce más <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-tag">PRÉSTAMOS</div>
+                    <h3 class="card-title">Usa tu Bitcoin como garantía</h3>
+                    <p class="card-copy">
+                        Desbloquea liquidez sin vender. Tu Bitcoin en custodia puede servir como garantía para préstamos MXN o USD.
+                    </p>
+                    <a href="/productos/prestamos-mxn" class="btn-text">
+                        Conoce más <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="h2">¿Listo para proteger tu Bitcoin?</h2>
+                <p class="lead">Crea tu billetera con custodia de grado institucional y protección legal ASOFOM.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                        Regístrate ahora
+                    </a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+                        ¿Tienes preguntas? Pregúntale a Maxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text mb-md">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p class="text-secondary">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Productos</h4>
+                    <a href="/productos/compra-venta">Compra y Venta</a>
+                    <a href="/productos/compras-recurrentes">Compras Recurrentes</a>
+                    <a href="/productos/prestamos-mxn">Préstamos MXN</a>
+                    <a href="/productos/prestamos-usd">Préstamos USD</a>
+                    <a href="/productos/b2x">B2X Leverage</a>
+                    <a href="/productos/stacker-inmobiliario">Stacker Inmobiliario</a>
+                    <a href="/productos/tarjeta-btc">Tarjeta BTC</a>
+                    <a href="/productos/billetera">Billetera</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Servicios</h4>
+                    <a href="/clientes-privados">Clientes Privados</a>
+                    <a href="/empresas">Empresas</a>
+                    <a href="/empresas#tesoreria">Tesorería BTC</a>
+                    <a href="/empresas#custodia">Custodia</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Aprende</h4>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">AprenderBitcoin</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">Pregúntale a Maxi</a>
+                    <a href="/#newsletter">Newsletter</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Empresa</h4>
+                    <a href="/nosotros">Nosotros</a>
+                    <a href="/seguridad">Seguridad</a>
+                    <a href="/regulacion">Regulación</a>
+                    <a href="/prensa">Prensa</a>
+                    <a href="/contacto">Soporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted">
+                    © 2026 ArcadiaB. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="/privacidad">Aviso de Privacidad</a>
+                    <a href="/terminos">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+</body>
+</html>
