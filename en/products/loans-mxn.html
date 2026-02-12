@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ArcadiaB">
+    <meta property="og:title" content="Préstamos MXN con Bitcoin - ArcadiaB">
+    <meta property="og:description" content="Liquidez sin vender tu Bitcoin. Regulado ASOFOM.">
+    <meta property="og:url" content="https://arcadaib.netlify.app/productos/loans-mxn">
+    <meta property="og:image" content="https://arcadaib.netlify.app/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Préstamos MXN con Bitcoin - ArcadiaB">
+    <meta name="twitter:description" content="Liquidez sin vender tu Bitcoin. Regulado ASOFOM.">
+    <meta name="twitter:image" content="https://arcadaib.netlify.app/assets/og-image.jpg">
+    <title>Préstamos en Pesos Mexicanos - ArcadiaB</title>
+    <meta name="description" content="Préstamos en pesos usando Bitcoin como garantía. Liquidez sin vender tu BTC. Tasa desde 18%, LTV 50%, regulado ASOFOM.">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QS7E2R8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E7QS7E2R8Y');
+    </script>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/#productos" class="nav-link">Products</a>
+                    <a href="/en/business" class="nav-link">Business</a>
+                    <a href="/en/treasury" class="nav-link">Treasury</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/en/about" class="nav-link">About</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" href="/" title="Versión en español">ES</span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Sign In</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="product-hero">
+                <div class="product-hero-content">
+                    <div class="card-tag">PRÉSTAMOS MXN</div>
+                    <h1 class="h1">Liquidez sin vender tu Bitcoin</h1>
+                    <p class="lead">
+                        Usa tu Bitcoin como garantía y recibe pesos mexicanos. Conserva tu exposición alcista. 
+                        Tasa fija. Sin venta de activos. Regulado bajo fideicomiso ASOFOM.
+                    </p>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                            Start now
+                        </a>
+                        <a href="#como-funciona" class="btn btn-ghost btn-lg">
+                            Cómo funciona
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-loan-calculator-mxn.jpg" alt="Calculadora de Préstamos MXN" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="como-funciona" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            
+            <div class="steps-horizontal">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="h4">Calculate your loan</h3>
+                    <p>Indica cuánto Bitcoin tienes y cuántos pesos necesitas. Te mostramos tu LTV y tasa al instante.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="h4">Deposita garantía</h3>
+                    <p>Transfiere tu Bitcoin a nuestro fideicomiso ASOFOM. Tu colateral está protegido legalmente.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="h4">Recibe pesos</h3>
+                    <p>Los pesos llegan a tu cuenta bancaria en 24-48 horas vía SPEI. Sin venta de Bitcoin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Details</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="h4">💰 Montos y Plazos</h3>
+                    <ul>
+                        <li>Préstamos desde $50,000 MXN</li>
+                        <li>LTV máximo: 50% (conservador)</li>
+                        <li>Plazos: 3, 6, 9 o 12 meses</li>
+                        <li>Renovación disponible al vencimiento</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">📊 Tasas y Costos</h3>
+                    <ul>
+                        <li>Tasa fija anual: desde 18%</li>
+                        <li>Sin comisión por apertura</li>
+                        <li>Sin penalización por pago anticipado</li>
+                        <li>Pagos mensuales solo de interés</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">🔒 Protección Legal</h3>
+                    <ul>
+                        <li>Fideicomiso regulado ASOFOM</li>
+                        <li>Tu Bitcoin bajo custodia legal</li>
+                        <li>No vendemos ni re-hipotecamos tu BTC</li>
+                        <li>Auditorías independientes trimestrales</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">⚡ Proceso</h3>
+                    <ul>
+                        <li>Aprobación: 24 horas</li>
+                        <li>Desembolso: 24-48 horas</li>
+                        <li>Sin buró de crédito</li>
+                        <li>Renovación automática disponible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Bridge -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(212, 168, 67, 0.1) 0%, rgba(212, 168, 67, 0.05) 100%);">
+        <div class="container">
+            <div class="content-bridge">
+                <div class="content-bridge-icon">🛡️</div>
+                <h2 class="h3">¿Cómo funciona la custodia y protección legal?</h2>
+                <p class="lead">Somos la única empresa de Bitcoin con regulación ASOFOM en México. Lee sobre nuestra infraestructura de seguridad y cumplimiento regulatorio.</p>
+                <a href="/en/security" class="btn btn-primary">
+                    Conoce nuestra seguridad
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué pasa si el precio de Bitcoin cae?</summary>
+                    <div class="faq-answer">
+                        <p>Establecemos un LTV conservador (máximo 50%) para darte un colchón contra volatilidad. Si tu LTV supera el 65%, te notificamos para que agregues más colateral o pagues parte del préstamo. Si alcanza 75%, liquidamos solo lo necesario para restaurar un LTV seguro.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué es LTV y por qué importa?</summary>
+                    <div class="faq-answer">
+                        <p>LTV (Loan-to-Value) es el porcentaje que tu préstamo representa del valor de tu Bitcoin. Un LTV del 50% significa que si tienes $100,000 en Bitcoin, te prestamos hasta $50,000 MXN. Entre más bajo el LTV, más seguro estás contra volatilidad.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Puedo pagar antes del vencimiento?</summary>
+                    <div class="faq-answer">
+                        <p>Sí, puedes pagar todo o parte del préstamo en cualquier momento sin penalización. Al pagar, recuperas tu Bitcoin inmediatamente. Esto es útil si el precio sube y quieres reducir tu LTV o simplemente recuperar tu colateral.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué protección legal tengo sobre mi Bitcoin?</summary>
+                    <div class="faq-answer">
+                        <p>Tu Bitcoin se deposita en un fideicomiso regulado bajo ASOFOM (Asociación de Sociedades Financieras de Objeto Múltiple). Esto significa que tu colateral está legalmente segregado y protegido, no puede ser usado para otros fines, y está sujeto a auditorías regulatorias.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Por qué pedir prestado en vez de vender?</summary>
+                    <div class="faq-answer">
+                        <p>Vender Bitcoin genera impuestos (ISR de hasta 35%) y pierdes tu exposición alcista. Con un préstamo, conservas tu Bitcoin, no pagas impuestos de venta, y puedes beneficiarte si el precio sube. Es la estrategia preferida de holders de largo plazo.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cuánto Bitcoin necesito para calificar?</summary>
+                    <div class="faq-answer">
+                        <p>Depende del monto que necesites. Para un préstamo de $50,000 MXN con LTV del 50%, necesitarías aproximadamente $100,000 MXN en Bitcoin (alrededor de 0.001 BTC a precios actuales). Usa nuestra calculadora para ver tu caso específico.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Sell -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">You may also like</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-tag">B2X LEVERAGE</div>
+                    <h3 class="card-title">Multiplica tu exposición a Bitcoin</h3>
+                    <p class="card-copy">
+                        Si crees que Bitcoin subirá, B2X te permite comprar más Bitcoin usando tu stack actual como garantía.
+                    </p>
+                    <a href="/en/products/b2x" class="btn-text">
+                        Learn more <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-tag">PRÉSTAMOS USD</div>
+                    <h3 class="card-title">¿Necesitas dólares?</h3>
+                    <p class="card-copy">
+                        Igual que préstamos MXN, pero recibes dólares estadounidenses. Ideal para pagos internacionales o protección contra devaluación.
+                    </p>
+                    <a href="/en/products/loans-usd" class="btn-text">
+                        Learn more <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="h2">¿Listo para desbloquear liquidez?</h2>
+                <p class="lead">Calculate your loan y recibe pesos sin vender tu Bitcoin.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                        Sign up now
+                    </a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                        ¿Tienes preguntas? Pregúntale a Maxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text mb-md">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p class="text-secondary">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <a href="/en/products/buy-sell">Compra y Venta</a>
+                    <a href="/en/products/recurring">Compras Recurrentes</a>
+                    <a href="/en/products/loans-mxn">Préstamos MXN</a>
+                    <a href="/en/products/loans-usd">Préstamos USD</a>
+                    <a href="/en/products/b2x">B2X Leverage</a>
+                    <a href="/en/products/real-estate-stacker">Stacker Inmobiliario</a>
+                    <a href="/en/products/card">Tarjeta BTC</a>
+                    <a href="/en/products/wallet">Billetera</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <a href="/en/private-clients">Clientes Privados</a>
+                    <a href="/en/business">Business</a>
+                    <a href="/empresas#tesoreria">Tesorería BTC</a>
+                    <a href="/empresas#custodia">Custodia</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Learn</h4>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">AprenderBitcoin</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">Pregúntale a Maxi</a>
+                    <a href="/#newsletter">Newsletter</a>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">ArcadiaB Ecosystem</h4>
+                    <a href="https://arcadiab.com">ArcadiaB.com</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">Aprender Bitcoin</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">MaxiMoon</a>
+                </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <a href="/en/about">About</a>
+                    <a href="/en/security">Seguridad</a>
+                    <a href="/en/regulation">Regulación</a>
+                    <a href="/en/press">Prensa</a>
+                    <a href="/en/contact">Soporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted">
+                    © 2026 ArcadiaB. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="/en/privacy">Privacy Policy</a>
+                    <a href="/en/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/animations.js"></script>
+</body>
+</html>

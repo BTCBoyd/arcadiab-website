@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ArcadiaB">
+    <meta property="og:title" content="Tarjeta BTC Cash Back - ArcadiaB">
+    <meta property="og:description" content="Gana 1% en Bitcoin en cada compra. Primera tarjeta Bitcoin de México.">
+    <meta property="og:url" content="https://arcadaib.netlify.app/productos/card">
+    <meta property="og:image" content="https://arcadaib.netlify.app/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tarjeta BTC Cash Back - ArcadiaB">
+    <meta name="twitter:description" content="Gana 1% en Bitcoin en cada compra. Primera tarjeta Bitcoin de México.">
+    <meta name="twitter:image" content="https://arcadaib.netlify.app/assets/og-image.jpg">
+    <title>Tarjeta BTC Cash Back - ArcadiaB</title>
+    <meta name="description" content="Tarjeta de crédito con 1% cash back en Bitcoin. Acumula sats en cada compra. Mastercard aceptada en todo México y el mundo.">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QS7E2R8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E7QS7E2R8Y');
+    </script>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/#productos" class="nav-link">Products</a>
+                    <a href="/en/business" class="nav-link">Business</a>
+                    <a href="/en/treasury" class="nav-link">Treasury</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/en/about" class="nav-link">About</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" href="/" title="Versión en español">ES</span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Sign In</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="product-hero">
+                <div class="product-hero-content">
+                    <div class="card-tag">TARJETA BTC</div>
+                    <h1 class="h1">Gana Bitcoin en cada compra</h1>
+                    <p class="lead">
+                        Usa tu tarjeta ArcadiaB para gastos diarios y acumula sats automáticamente. 
+                        Cada café, cada Uber, cada compra = más Bitcoin. Sin cambiar tu estilo de vida.
+                    </p>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                            Start now
+                        </a>
+                        <a href="#como-funciona" class="btn btn-ghost btn-lg">
+                            Cómo funciona
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-credit-card-cropped.jpg" alt="Tarjeta ArcadiaB Cash Back" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="como-funciona" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            
+            <div class="steps-horizontal">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="h4">Apply for your card</h3>
+                    <p>Llena el formulario de solicitud. Evaluamos tu perfil y aprobamos en 24-48 horas.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="h4">Activa y úsala</h3>
+                    <p>Recibe tu tarjeta en 5-7 días. Actívala en la app y empieza a usarla para todos tus gastos diarios.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="h4">Acumula sats</h3>
+                    <p>Cada compra te devuelve 1% en Bitcoin. Observa cómo tu stack crece automáticamente cada mes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Details</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="h4">₿ Cash Back en Bitcoin</h3>
+                    <ul>
+                        <li>1% de cada compra en Bitcoin</li>
+                        <li>Sin límite de acumulación</li>
+                        <li>Cash back depositado semanalmente</li>
+                        <li>Retira tu Bitcoin cuando quieras</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">💳 Detalles de la Tarjeta</h3>
+                    <ul>
+                        <li>Tarjeta de crédito Mastercard</li>
+                        <li>Aceptada en todo México y el mundo</li>
+                        <li>Pagos contactless (NFC)</li>
+                        <li>Compatible con Apple Pay / Google Pay</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">💰 Costos</h3>
+                    <ul>
+                        <li>Anualidad: $600 MXN (primer año gratis)</li>
+                        <li>Sin comisiones de transacción</li>
+                        <li>Sin comisión por cash back</li>
+                        <li>Tasa de interés competitiva</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">📊 Ejemplo Real</h3>
+                    <ul>
+                        <li>Gastos mensuales: $15,000 MXN</li>
+                        <li>Cash back mensual: $150 MXN en BTC</li>
+                        <li>Anual: $1,800 MXN en Bitcoin</li>
+                        <li>+ apreciación de Bitcoin con el tiempo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Bridge -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(212, 168, 67, 0.1) 0%, rgba(212, 168, 67, 0.05) 100%);">
+        <div class="container">
+            <div class="content-bridge">
+                <div class="content-bridge-icon">🎓</div>
+                <h2 class="h3">La forma más fácil de empezar</h2>
+                <p class="lead">Si eres nuevo en Bitcoin, esta es la manera perfecta de comenzar. Acumula sats sin esfuerzo mientras vives tu vida normal.</p>
+                <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                    Aprende más sobre Bitcoin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cómo funciona el cash back en Bitcoin?</summary>
+                    <div class="faq-answer">
+                        <p>Por cada compra que hagas con tu tarjeta ArcadiaB, recibes 1% del monto gastado de vuelta en Bitcoin. Por ejemplo, si gastas $1,000 MXN en un restaurante, recibes $10 MXN en Bitcoin. El cash back se deposita semanalmente en tu wallet de ArcadiaB.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Puedo retirar mi Bitcoin acumulado?</summary>
+                    <div class="faq-answer">
+                        <p>Sí. Todo el Bitcoin que acumulas vía cash back es tuyo y puedes retirarlo a tu propia wallet o venderlo en cualquier momento. No hay periodos de bloqueo ni restricciones.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué requisitos necesito para solicitar la tarjeta?</summary>
+                    <div class="faq-answer">
+                        <p>Necesitas ser residente mexicano mayor de 18 años, tener identificación oficial vigente (INE/pasaporte), y comprobante de ingresos. El proceso de evaluación crediticia es estándar, similar a cualquier tarjeta de crédito.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Dónde puedo usar mi tarjeta ArcadiaB?</summary>
+                    <div class="faq-answer">
+                        <p>En cualquier lugar que acepte Mastercard, tanto en México como internacionalmente. Funciona en tiendas físicas, compras en línea, y es compatible con Apple Pay y Google Pay para pagos contactless.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué pasa con el Bitcoin si el precio sube?</summary>
+                    <div class="faq-answer">
+                        <p>El Bitcoin que acumulas vía cash back se aprecia con el mercado. Si gastas $100k MXN en un año, acumulas $1,000 MXN en Bitcoin. Si Bitcoin sube 50%, ese $1,000 MXN ahora vale $1,500 MXN. Es ahorro forzado que se aprecia.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cómo se compara con otras tarjetas de cash back?</summary>
+                    <div class="faq-answer">
+                        <p>La mayoría de las tarjetas te dan puntos que pierden valor con la inflación. Nosotros te damos Bitcoin, un activo deflacionario que históricamente se aprecia. Es la única tarjeta en México que te permite acumular un activo de reserva de valor en lugar de moneda fiduciaria.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Sell -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">You may also like</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-tag">COMPRAS RECURRENTES</div>
+                    <h3 class="card-title">Combínalo con compras automáticas</h3>
+                    <p class="card-copy">
+                        Usa tu tarjeta para acumular 1% en cada gasto + configura compras recurrentes para acumular aún más Bitcoin cada mes.
+                    </p>
+                    <a href="/en/products/recurring" class="btn-text">
+                        Learn more <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-tag">BILLETERA</div>
+                    <h3 class="card-title">Guarda tu Bitcoin acumulado</h3>
+                    <p class="card-copy">
+                        Todo el Bitcoin que acumulas con tu tarjeta se almacena automáticamente en tu wallet ArcadiaB con custodia de grado institucional.
+                    </p>
+                    <a href="/en/products/wallet" class="btn-text">
+                        Learn more <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="h2">¿Listo para acumular Bitcoin sin esfuerzo?</h2>
+                <p class="lead">Apply for your card ArcadiaB y empieza a ganar Bitcoin en cada compra.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                        Sign up now
+                    </a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                        ¿Tienes preguntas? Pregúntale a Maxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text mb-md">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p class="text-secondary">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <a href="/en/products/buy-sell">Compra y Venta</a>
+                    <a href="/en/products/recurring">Compras Recurrentes</a>
+                    <a href="/en/products/loans-mxn">Préstamos MXN</a>
+                    <a href="/en/products/loans-usd">Préstamos USD</a>
+                    <a href="/en/products/b2x">B2X Leverage</a>
+                    <a href="/en/products/real-estate-stacker">Stacker Inmobiliario</a>
+                    <a href="/en/products/card">Tarjeta BTC</a>
+                    <a href="/en/products/wallet">Billetera</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <a href="/en/private-clients">Clientes Privados</a>
+                    <a href="/en/business">Business</a>
+                    <a href="/empresas#tesoreria">Tesorería BTC</a>
+                    <a href="/empresas#custodia">Custodia</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Learn</h4>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">AprenderBitcoin</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">Pregúntale a Maxi</a>
+                    <a href="/#newsletter">Newsletter</a>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">ArcadiaB Ecosystem</h4>
+                    <a href="https://arcadiab.com">ArcadiaB.com</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">Aprender Bitcoin</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">MaxiMoon</a>
+                </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <a href="/en/about">About</a>
+                    <a href="/en/security">Seguridad</a>
+                    <a href="/en/regulation">Regulación</a>
+                    <a href="/en/press">Prensa</a>
+                    <a href="/en/contact">Soporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted">
+                    © 2026 ArcadiaB. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="/en/privacy">Privacy Policy</a>
+                    <a href="/en/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/animations.js"></script>
+</body>
+</html>

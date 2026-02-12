@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ArcadiaB">
+    <meta property="og:title" content="Compra y Vende Bitcoin - ArcadiaB">
+    <meta property="og:description" content="Tu primer Bitcoin en minutos. Desde cualquier banco mexicano.">
+    <meta property="og:url" content="https://arcadaib.netlify.app/productos/buy-sell">
+    <meta property="og:image" content="https://arcadaib.netlify.app/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compra y Vende Bitcoin - ArcadiaB">
+    <meta name="twitter:description" content="Tu primer Bitcoin en minutos. Desde cualquier banco mexicano.">
+    <meta name="twitter:image" content="https://arcadaib.netlify.app/assets/og-image.jpg">
+    <title>Compra y Venta de Bitcoin - ArcadiaB</title>
+    <meta name="description" content="Compra y vende Bitcoin en México. Desde cualquier banco vía SPEI o tarjeta. Custodia segura regulada ASOFOM. Tu primer Bitcoin en minutos.">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QS7E2R8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E7QS7E2R8Y');
+    </script>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/#productos" class="nav-link">Products</a>
+                    <a href="/en/business" class="nav-link">Business</a>
+                    <a href="/en/treasury" class="nav-link">Treasury</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/en/about" class="nav-link">About</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" href="/" title="Versión en español">ES</span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Sign In</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="product-hero">
+                <div class="product-hero-content">
+                    <div class="card-tag">COMPRA Y VENTA</div>
+                    <h1 class="h1">Tu primer Bitcoin en minutos</h1>
+                    <p class="lead">
+                        Compra Bitcoin con pesos mexicanos desde cualquier banco. Sin complicaciones. 
+                        Sin documentos complejos. Compatible con SPEI y tarjetas de débito/crédito.
+                    </p>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                            Start now
+                        </a>
+                        <a href="#como-funciona" class="btn btn-ghost btn-lg">
+                            Cómo funciona
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div style="background: #0B0B1A; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; font-family: 'Red Hat Display', sans-serif;">
+                                    <div style="text-align: center; margin-bottom: 2rem;">
+                                        <div style="color: #9A98A8; font-size: 0.9rem; margin-bottom: 0.5rem;">Comprar Bitcoin</div>
+                                        <div style="color: #E8E6E0; font-size: 3rem; font-weight: 700;">₿ 0.05</div>
+                                        <div style="color: #9A98A8; font-size: 1.1rem; margin-top: 0.5rem;">$50,000 MXN</div>
+                                    </div>
+                                    <div style="width: 100%; max-width: 280px; background: rgba(212, 168, 67, 0.1); border: 1px solid rgba(212, 168, 67, 0.2); border-radius: 12px; padding: 1.5rem;">
+                                        <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                                            <span style="color: #9A98A8; font-size: 0.9rem;">Método de pago</span>
+                                            <span style="color: #E8E6E0; font-weight: 600;">SPEI</span>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <span style="color: #9A98A8; font-size: 0.9rem;">Tiempo estimado</span>
+                                            <span style="color: #4ADE80; font-weight: 600;">2-5 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="como-funciona" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            
+            <div class="steps-horizontal">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="h4">Get Started</h3>
+                    <p>Crea tu cuenta en menos de 2 minutos. Solo necesitas tu correo electrónico y una contraseña segura.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="h4">Deposita pesos</h3>
+                    <p>Transfiere desde cualquier banco mexicano vía SPEI o usa tu tarjeta de débito/crédito.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="h4">Compra Bitcoin</h3>
+                    <p>Intercambia tus pesos por Bitcoin al mejor precio del mercado. Instantáneo y seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Details</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="h4">💳 Métodos de Pago</h3>
+                    <ul>
+                        <li>SPEI (transferencia bancaria)</li>
+                        <li>Tarjeta de débito</li>
+                        <li>Tarjeta de crédito</li>
+                        <li>Compatible con todos los bancos mexicanos</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">⚡ Velocidad</h3>
+                    <ul>
+                        <li>Registro: menos de 2 minutos</li>
+                        <li>Depósitos SPEI: 2-5 minutos</li>
+                        <li>Tarjeta: instantáneo</li>
+                        <li>Compra de Bitcoin: instantánea</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">💰 Límites y Comisiones</h3>
+                    <ul>
+                        <li>Mínimo: $500 MXN</li>
+                        <li>Máximo: Sin límite</li>
+                        <li>Comisión: 1.5% por transacción</li>
+                        <li>Sin comisiones ocultas</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">🔒 Seguridad</h3>
+                    <ul>
+                        <li>Custodia multifirma</li>
+                        <li>Regulados ASOFOM</li>
+                        <li>Encriptación de extremo a extremo</li>
+                        <li>Auditorías de seguridad periódicas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Bridge -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(212, 168, 67, 0.1) 0%, rgba(212, 168, 67, 0.05) 100%);">
+        <div class="container">
+            <div class="content-bridge">
+                <div class="content-bridge-icon">🎓</div>
+                <h2 class="h3">¿Nuevo en Bitcoin?</h2>
+                <p class="lead">Nuestro curso te explica todo antes de tu primera compra.</p>
+                <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                    Empieza el curso gratuito
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">¿Necesito una cuenta bancaria para comprar Bitcoin?</summary>
+                    <div class="faq-answer">
+                        <p>Sí, necesitas una cuenta bancaria mexicana o una tarjeta de débito/crédito mexicana para depositar pesos. Una vez que tengas saldo en tu cuenta de ArcadiaB, puedes comprar Bitcoin instantáneamente.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cuánto tiempo tarda en llegar mi Bitcoin?</summary>
+                    <div class="faq-answer">
+                        <p>La compra es instantánea. Una vez que tu depósito en pesos se refleje en tu cuenta (2-5 minutos para SPEI, instantáneo para tarjeta), puedes comprar Bitcoin inmediatamente y aparecerá en tu wallet de ArcadiaB al instante.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Puedo vender mi Bitcoin y recibir pesos?</summary>
+                    <div class="faq-answer">
+                        <p>Sí. Puedes vender tu Bitcoin en cualquier momento al precio de mercado y recibir pesos mexicanos en tu cuenta bancaria. Los retiros vía SPEI generalmente se procesan en 24-48 horas hábiles.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Es seguro ArcadiaB?</summary>
+                    <div class="faq-answer">
+                        <p>Sí. Somos la primera empresa de Bitcoin en México con certificación ASOFOM. Tu Bitcoin se almacena en custodia multifirma de grado institucional, y operamos bajo el marco regulatorio mexicano desde 2017.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cuál es el mínimo para comprar Bitcoin?</summary>
+                    <div class="faq-answer">
+                        <p>El mínimo es $500 MXN. No hay máximo — puedes comprar la cantidad de Bitcoin que desees.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Puedo retirar mi Bitcoin a otra wallet?</summary>
+                    <div class="faq-answer">
+                        <p>Sí. Puedes enviar tu Bitcoin a cualquier otra wallet en cualquier momento. La red Bitcoin cobra una pequeña comisión de minería (generalmente entre $5-20 MXN dependiendo de la congestión de la red).</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Sell -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">You may also like</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-tag">COMPRAS RECURRENTES</div>
+                    <h3 class="card-title">Acumula Bitcoin automáticamente</h3>
+                    <p class="card-copy">
+                        Configura compras diarias, semanales o mensuales. La estrategia de los inversionistas más inteligentes del mundo.
+                    </p>
+                    <a href="/en/products/recurring" class="btn-text">
+                        Learn more <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-tag">TARJETA BTC</div>
+                    <h3 class="card-title">Gana Bitcoin en cada compra</h3>
+                    <p class="card-copy">
+                        Usa tu tarjeta ArcadiaB para gastos diarios y acumula sats automáticamente en cada transacción.
+                    </p>
+                    <a href="/en/products/card" class="btn-text">
+                        Learn more <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="h2">¿Listo para empezar?</h2>
+                <p class="lead">Crea tu cuenta y compra tu primer Bitcoin en minutos.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                        Sign up now
+                    </a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                        ¿Tienes preguntas? Pregúntale a Maxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text mb-md">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p class="text-secondary">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <a href="/en/products/buy-sell">Compra y Venta</a>
+                    <a href="/en/products/recurring">Compras Recurrentes</a>
+                    <a href="/en/products/loans-mxn">Préstamos MXN</a>
+                    <a href="/en/products/loans-usd">Préstamos USD</a>
+                    <a href="/en/products/b2x">B2X Leverage</a>
+                    <a href="/en/products/real-estate-stacker">Stacker Inmobiliario</a>
+                    <a href="/en/products/card">Tarjeta BTC</a>
+                    <a href="/en/products/wallet">Billetera</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Services</h4>
+                    <a href="/en/private-clients">Clientes Privados</a>
+                    <a href="/en/business">Business</a>
+                    <a href="/empresas#tesoreria">Tesorería BTC</a>
+                    <a href="/empresas#custodia">Custodia</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Learn</h4>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">AprenderBitcoin</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">Pregúntale a Maxi</a>
+                    <a href="/#newsletter">Newsletter</a>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">ArcadiaB Ecosystem</h4>
+                    <a href="https://arcadiab.com">ArcadiaB.com</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">Aprender Bitcoin</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">MaxiMoon</a>
+                </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Company</h4>
+                    <a href="/en/about">About</a>
+                    <a href="/en/security">Seguridad</a>
+                    <a href="/en/regulation">Regulación</a>
+                    <a href="/en/press">Prensa</a>
+                    <a href="/en/contact">Soporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted">
+                    © 2026 ArcadiaB. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="/en/privacy">Privacy Policy</a>
+                    <a href="/en/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/animations.js"></script>
+</body>
+</html>

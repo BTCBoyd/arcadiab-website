@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacker Inmobiliario - ArcadiaB</title>
+    <meta name="description" content="Usa tu inmueble para comprar Bitcoin. Préstamos sobre propiedad para inversión BTC. Nunca vendas tu casa, construye tu stack.">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QS7E2R8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E7QS7E2R8Y');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/#productos" class="nav-link">Products</a>
+                    <a href="/en/business" class="nav-link">Business</a>
+                    <a href="/en/treasury" class="nav-link">Treasury</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/en/about" class="nav-link">About</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" href="/" title="Versión en español">ES</span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Sign In</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: 8rem; background: linear-gradient(135deg, #0B0B1A 0%, #1a1a2e 100%);">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h1 class="h1" style="font-size: 3.5rem; margin-bottom: 1.5rem;">
+                    Nunca Vendas Tu Inmueble Otra Vez
+                </h1>
+                <p class="lead" style="font-size: 1.5rem; color: #9A98A8; margin-bottom: 3rem;">
+                    Protege tu riqueza mientras accedes al potencial de crecimiento de Bitcoin
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#como-funciona" class="btn btn-primary btn-lg">How It Works</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Ver Investigación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="h2" style="margin-bottom: 2rem;">El Problema Que Enfrentas</h2>
+                
+                <p class="body-large" style="margin-bottom: 1.5rem;">
+                    Tienes bienes raíces valiosos en México. Han apreciado con los años y representan 
+                    una parte significativa de tu riqueza. Pero esa riqueza está atrapada.
+                </p>
+
+                <p class="body-large" style="margin-bottom: 2rem;">
+                    Hoy, si quieres acceder al capital de tu propiedad, tus opciones son limitadas y poco atractivas:
+                </p>
+
+                <div style="display: grid; gap: 1.5rem; margin-bottom: 3rem;">
+                    <div class="card" style="border-left: 4px solid #D4A843;">
+                        <h3 class="h4" style="color: #D4A843; margin-bottom: 0.5rem;">Vender la propiedad</h3>
+                        <p>Y pagar impuestos sobre ganancias de capital, perder permanentemente tu posición en bienes raíces 
+                        y renunciar a la apreciación futura en un mercado que históricamente ha entregado rendimientos 
+                        anuales del 8-12%.</p>
+                    </div>
+
+                    <div class="card" style="border-left: 4px solid #D4A843;">
+                        <h3 class="h4" style="color: #D4A843; margin-bottom: 0.5rem;">Convertirte en arrendador</h3>
+                        <p>Y lidiar con dolores de cabeza de inquilinos, costos de mantenimiento, riesgos de vacancia, 
+                        tarifas de administración de propiedades y la carga operativa constante de los ingresos por alquiler.</p>
+                    </div>
+
+                    <div class="card" style="border-left: 4px solid #D4A843;">
+                        <h3 class="h4" style="color: #D4A843; margin-bottom: 0.5rem;">No hacer nada</h3>
+                        <p>Y observar cómo tu capital permanece inactivo mientras el peso mexicano continúa su patrón 
+                        de décadas de devaluación, erosionando constantemente el poder adquisitivo real de tu riqueza.</p>
+                    </div>
+                </div>
+
+                <p class="body-large" style="margin-bottom: 1rem;">
+                    Mientras tanto, entiendes que Bitcoin representa quizás la oportunidad de protección de riqueza 
+                    más convincente de nuestra generación. Pero acceder a él típicamente significa liquidar otros activos 
+                    — activos que no quieres vender.
+                </p>
+
+                <p class="lead" style="color: #D4A843; text-align: center; margin-top: 2rem;">
+                    ¿Y si no tuvieras que elegir?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="como-funciona" style="background: #0F0F1E;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h2 class="h2" style="margin-bottom: 3rem; text-align: center;">How It Works el Programa</h2>
+                
+                <div style="display: grid; gap: 2rem;">
+                    <div class="card">
+                        <div style="display: flex; align-items: start; gap: 1.5rem;">
+                            <div style="background: #D4A843; color: #0B0B1A; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; flex-shrink: 0;">1</div>
+                            <div>
+                                <h3 class="h4" style="margin-bottom: 0.5rem;">Mantén Tu Propiedad</h3>
+                                <p>Tu inmueble sigue siendo tuyo. Mantienes la propiedad completa y continúas beneficiándote de la 
+                                apreciación de la propiedad. El título se transfiere al fideicomiso fiduciario regulado de ArcadiaB 
+                                durante la duración del préstamo — una estructura legal estándar en las finanzas inmobiliarias 
+                                mexicanas que protege a ambas partes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: start; gap: 1.5rem;">
+                            <div style="background: #D4A843; color: #0B0B1A; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; flex-shrink: 0;">2</div>
+                            <div>
+                                <h3 class="h4" style="margin-bottom: 0.5rem;">Pide Prestado Contra Ella</h3>
+                                <p>ArcadiaB emite un préstamo contra el valor tasado de tu propiedad. Puedes pedir prestado hasta 
+                                el 50% del valor de la propiedad (relación préstamo-valor), dándote liquidez significativa mientras 
+                                mantienes un margen de seguridad conservador.</p>
+                                <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                                    <li><strong>Préstamo denominado en USD</strong> al 12% APR</li>
+                                    <li><strong>Préstamo denominado en MXN</strong> disponible</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: start; gap: 1.5rem;">
+                            <div style="background: #D4A843; color: #0B0B1A; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; flex-shrink: 0;">3</div>
+                            <div>
+                                <h3 class="h4" style="margin-bottom: 0.5rem;">Adquiere Bitcoin</h3>
+                                <p>Los fondos del préstamo se usan para comprar Bitcoin, que se mantiene en custodia segura dentro 
+                                del fideicomiso fiduciario de ArcadiaB junto con el título de tu propiedad. Ahora tienes exposición 
+                                al potencial de crecimiento de Bitcoin — un activo que ha entregado más del 100% de rendimientos 
+                                anuales promedio durante la última década.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div style="display: flex; align-items: start; gap: 1.5rem;">
+                            <div style="background: #D4A843; color: #0B0B1A; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.5rem; flex-shrink: 0;">4</div>
+                            <div>
+                                <h3 class="h4" style="margin-bottom: 0.5rem;">Tranquilidad</h3>
+                                <p>Sin responsabilidades de arrendador. Sin venta de propiedad. Sin evento de impuesto sobre ganancias 
+                                de capital. Tu inmueble continúa apreciándose. Tu posición de Bitcoin crece. Pagas los intereses del 
+                                préstamo en un calendario manejable. Dos activos que se aprecian trabajando para tu futuro financiero 
+                                en lugar de uno sentado inactivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Sense -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="h2" style="margin-bottom: 2rem;">Por Qué Esto Tiene Sentido Financiero</h2>
+                
+                <h3 class="h3" style="margin-bottom: 1.5rem;">Las Matemáticas Detrás de la Estrategia</h3>
+                
+                <div style="overflow-x: auto; margin-bottom: 2rem;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: #1a1a2e;">
+                                <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #D4A843;">Activo</th>
+                                <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #D4A843;">Tendencia Histórica</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 1rem; border-bottom: 1px solid #2a2a3e;"><strong>Peso Mexicano</strong></td>
+                                <td style="padding: 1rem; border-bottom: 1px solid #2a2a3e;">Devaluación constante a largo plazo contra el dólar estadounidense. El peso ha perdido más del 99% de su poder adquisitivo desde 1970.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem; border-bottom: 1px solid #2a2a3e;"><strong>Bienes Raíces Mexicanos</strong></td>
+                                <td style="padding: 1rem; border-bottom: 1px solid #2a2a3e;">8-12% de apreciación anual promedio en los principales mercados. Excelente reserva de valor pero ilíquido.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem;"><strong>Bitcoin</strong></td>
+                                <td style="padding: 1rem;">100%+ de crecimiento anual promedio en los últimos 10 años. El activo digital más escaso jamás creado — solo existirán 21 millones.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(212, 168, 67, 0.1) 0%, rgba(212, 168, 67, 0.05) 100%); border: 2px solid #D4A843;">
+                    <h3 class="h4" style="color: #D4A843; margin-bottom: 1rem;">Tu Ventaja</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                            <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                            <span>Tu inmueble continúa apreciándose — no has vendido, así que retienes todo el potencial alcista futuro</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                            <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                            <span>No se desencadena impuesto sobre ganancias de capital — porque no has vendido nada</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                            <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                            <span>La exposición a Bitcoin potencialmente supera los intereses del préstamo en 5-10x</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                            <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                            <span>Sin dolores de cabeza de administración de propiedades</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                            <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                            <span>Tienes DOS activos que se aprecian en lugar de uno — inmuebles Y Bitcoin, ambos trabajando para ti</span>
+                        </li>
+                        <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                            <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                            <span>Protección contra la devaluación de la moneda</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section / Lead Magnet -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2 class="h2" style="margin-bottom: 1.5rem; text-align: center;">Descarga Nuestra Investigación Completa</h2>
+                <p class="body-large" style="margin-bottom: 3rem; text-align: center;">
+                    Análisis cuantitativo de 26 páginas sobre Bitcoin vs Bienes Raíces y modelos híbridos
+                </p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: center;">
+                    <!-- Cover Image -->
+                    <div style="position: relative;">
+                        <img src="/assets/bitcoin-vs-real-estate-cover.png" alt="Bitcoin vs Real Estate - Capital Duro" style="width: 100%; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
+                        <div style="position: absolute; top: 12px; right: 12px; background: #D4A843; color: #0B0B1A; padding: 8px 16px; border-radius: 4px; font-weight: 700; font-size: 0.9rem;">
+                            PDF GRATUITO
+                        </div>
+                    </div>
+                    
+                    <!-- ConvertKit Form -->
+                    <div class="card">
+                        <h3 class="h3" style="margin-bottom: 1rem;">Obtén el Reporte Completo</h3>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                            <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                                <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                                <span>Comparación exhaustiva Bitcoin vs Real Estate</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                                <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                                <span>Modelos híbridos emergentes</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                                <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                                <span>Análisis cuantitativo de rendimientos</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; display: flex; align-items: start;">
+                                <span style="color: #D4A843; margin-right: 0.5rem;">✓</span>
+                                <span>Estrategias para family offices</span>
+                            </li>
+                        </ul>
+                        
+                        <!-- ConvertKit Form -->
+                        <div id="convertkit-form">
+                            <form action="https://app.kit.com/forms/9081843/subscriptions" method="post" data-sv-form="9081843" data-uid="b657f1c5e7" style="display: grid; gap: 1rem;">
+                                <input type="email" name="email_address" placeholder="tu@email.com" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                    Descargar Reporte PDF
+                                </button>
+                            </form>
+                            <p style="font-size: 0.875rem; color: #9A98A8; margin-top: 1rem; text-align: center;">
+                                Te enviaremos el PDF inmediatamente + insights mensuales de Bitcoin
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem; padding-top: 3rem; border-top: 1px solid #2a2a3e;">
+                    <p style="color: #9A98A8; margin-bottom: 1rem;">¿Quieres explorar más investigación?</p>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                        Ver Todos los Reportes en Capital Duro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <h2 class="h2" style="margin-bottom: 1.5rem; text-align: center;">¿Listo Para Explorar Esta Estrategia?</h2>
+                <p class="body-large" style="text-align: center; margin-bottom: 3rem;">
+                    Agenda una consulta confidencial para discutir si este programa es adecuado para tu situación.
+                </p>
+
+                <form class="card" style="display: grid; gap: 1.5rem;" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nombre Completo *</label>
+                        <input type="text" name="nombre" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email *</label>
+                        <input type="email" name="email" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Teléfono *</label>
+                        <input type="tel" name="telefono" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Tipo de Propiedad *</label>
+                        <select name="tipo_propiedad" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                            <option value="">Selecciona...</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="terreno">Terreno</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Valor Estimado de la Propiedad *</label>
+                        <select name="valor_estimado" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                            <option value="">Selecciona...</option>
+                            <option value="<2M">Menos de $2M MXN</option>
+                            <option value="2-5M">$2-5M MXN</option>
+                            <option value="5-10M">$5-10M MXN</option>
+                            <option value="10M+">Más de $10M MXN</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Ubicación (Ciudad/Estado) *</label>
+                        <input type="text" name="ubicacion" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">¿Cuánto Bitcoin quieres acumular?</label>
+                        <textarea name="bitcoin_objetivo" rows="3" style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0; font-family: inherit;"></textarea>
+                    </div>
+
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Mensaje Adicional</label>
+                        <textarea name="mensaje" rows="4" style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0; font-family: inherit;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        Solicitar Consulta
+                    </button>
+
+                    <p style="font-size: 0.875rem; color: #9A98A8; text-align: center;">
+                        También puedes contactarnos directamente en <a href="mailto:prestamos@arcadiab.com" style="color: #D4A843;">prestamos@arcadiab.com</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="section" style="background: #0F0F1E; padding: 2rem 0;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 0.875rem; color: #6A6878; text-align: center; line-height: 1.6;">
+                    <strong>Divulgación:</strong> Todas las cifras referenciadas en este documento son ilustrativas y 
+                    se proporcionan solo con fines educativos. Bitcoin es un activo volátil y el rendimiento pasado 
+                    no garantiza resultados futuros. Este documento no constituye asesoramiento de inversión. La 
+                    aprobación del préstamo está sujeta a los criterios de suscripción de ArcadiaB, la tasación de 
+                    la propiedad y los requisitos regulatorios aplicables.
+                </p>
+                <p style="font-size: 0.875rem; color: #6A6878; text-align: center; margin-top: 1rem;">
+                    <strong>ArcadiaB</strong> — Primera Empresa de Tesorería Bitcoin de México — Certificada ASOFOM — Desde 2017
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo-text" style="margin-bottom: 1rem;">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p style="color: #6A6878; max-width: 280px;">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 style="margin-bottom: 1rem;">Contacto</h4>
+                    <p style="color: #6A6878;">prestamos@arcadiab.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 style="margin-bottom: 1rem;">Legal</h4>
+                    <a href="/en/regulation" style="color: #6A6878; display: block; margin-bottom: 0.5rem;">Regulación</a>
+                    <a href="/en/security" style="color: #6A6878; display: block;">Seguridad</a>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid #2a2a3e; margin-top: 3rem; padding-top: 2rem; text-align: center; color: #6A6878;">
+                <p>&copy; 2025 ArcadiaB. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/animations.js"></script>
+</body>
+</html>
