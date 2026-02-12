@@ -112,25 +112,93 @@
   transform: rotate(-45deg) translateY(-8px);
 }
 
-/* Mega Menu (to be implemented with JS) */
+/* Dropdown Navigation */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-link-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dropdown-arrow {
+  font-size: 0.75rem;
+  transition: transform var(--transition-fast);
+}
+
+.nav-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Mega Menu */
 .mega-menu {
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
-  background: var(--bg-secondary);
-  border-bottom: 1px solid var(--border);
-  padding: var(--space-2xl) 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
   transition: all var(--transition-base);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  min-width: 800px;
+  margin-top: 1rem;
+  z-index: 100;
 }
 
-.mega-menu.active {
+.nav-dropdown:hover .mega-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
+}
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mega-menu-item {
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid transparent;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mega-menu-item:hover {
+  border-color: var(--gold);
+  background: rgba(212, 168, 67, 0.05);
+  transform: translateY(-2px);
+}
+
+.mega-menu-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.mega-menu-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0;
+}
+
+.mega-menu-desc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 /* Mobile Responsive */
@@ -147,6 +215,7 @@
     padding: 6rem 2rem 2rem 2rem;
     transition: right var(--transition-base);
     border-left: 1px solid var(--border);
+    overflow-y: auto;
   }
   
   .nav-menu.active {
@@ -168,6 +237,41 @@
   
   .btc-price {
     display: none;
+  }
+  
+  /* Mega menu on mobile */
+  .mega-menu {
+    position: static;
+    min-width: 100%;
+    transform: none;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    display: none;
+  }
+  
+  .nav-dropdown:hover .mega-menu {
+    transform: none;
+  }
+  
+  .mega-menu.active {
+    display: block;
+  }
+  
+  .mega-menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .mega-menu-item {
+    padding: 1rem;
+  }
+  
+  .nav-dropdown {
+    width: 100%;
+  }
+  
+  .nav-link-dropdown {
+    width: 100%;
   }
 }
 

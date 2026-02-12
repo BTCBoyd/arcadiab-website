@@ -24,6 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
+  // Mobile dropdown toggle
+  const dropdownLinks = document.querySelectorAll('.nav-link-dropdown');
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      // Only handle on mobile
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        const dropdown = link.getAttribute('data-dropdown');
+        const menu = document.getElementById(`${dropdown}-menu`);
+        if (menu) {
+          menu.classList.toggle('active');
+        }
+      }
+    });
+  });
+  
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
