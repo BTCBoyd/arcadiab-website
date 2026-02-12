@@ -86,7 +86,7 @@
 }
 
 .footer-title {
-  font-family: var(--font-sans);
+  font-family: var(--font-text);
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--text-bright);

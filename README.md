@@ -38,8 +38,8 @@ arcadiab-website/
 - **Orange:** `#E8863A` (app action color)
 
 ### Typography
-- **Headings:** Playfair Display (serif)
-- **Body:** DM Sans (sans-serif)
+- **Headings:** Red Hat Display (sans-serif, display font)
+- **Body:** Red Hat Text (sans-serif, text font)
 
 ### Components
 - Buttons: Primary (gold gradient), Ghost (transparent), Text (link)

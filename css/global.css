@@ -5,7 +5,7 @@
    FONTS
    ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&family=Red+Hat+Text:wght@400;500;600;700&display=swap');
 
 /* ========================================
    DESIGN TOKENS
@@ -44,8 +44,8 @@
   --gold-gradient: linear-gradient(135deg, var(--gold), var(--gold-dark));
   
   /* Typography */
-  --font-serif: 'Playfair Display', 'Georgia', serif;
-  --font-sans: 'DM Sans', 'Helvetica Neue', -apple-system, sans-serif;
+  --font-display: 'Red Hat Display', 'Helvetica Neue', -apple-system, sans-serif;
+  --font-text: 'Red Hat Text', 'Helvetica Neue', -apple-system, sans-serif;
   
   /* Spacing Scale */
   --space-xs: 0.5rem;
@@ -97,7 +97,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-text);
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
@@ -109,8 +109,8 @@ body {
    ======================================== */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-weight: 700;
   line-height: 1.2;
   color: var(--text-bright);
   margin-bottom: var(--space-md);
