@@ -1,37 +1,42 @@
-// ArcadiaB Scroll Animations
-// Fade-in animations as elements enter viewport
+// Scroll-triggered animations for ArcadiaB website
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Simple fade-in observer
-  const observerOptions = {
+// Add fade-in-up animation on scroll
+const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
-  };
-  
-  const observer = new IntersectionObserver((entries) => {
+};
+
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-        observer.unobserve(entry.target);
-      }
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+            observer.unobserve(entry.target); // Only animate once
+        }
     });
-  }, observerOptions);
-  
-  // Observe cards and sections
-  document.querySelectorAll('.card, .section-header, .content-bridge').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-  });
+}, observerOptions);
+
+// Observe all cards, sections, and product items
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.card, .step-item, .product-hero, .section-header');
+    animatedElements.forEach(el => {
+        el.classList.add('animate-me');
+        observer.observe(el);
+    });
 });
 
-// Add animate-in class styles
-const style = document.createElement('style');
-style.textContent = `
-  .animate-in {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-`;
-document.head.appendChild(style);
+// Parallax effect on scroll for hero sections
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    const heroSections = document.querySelectorAll('.product-hero, .section[style*="padding-top: 8rem"]');
+    
+    heroSections.forEach(hero => {
+        if (hero.getBoundingClientRect().top < window.innerHeight && hero.getBoundingClientRect().bottom > 0) {
+            const offset = currentScrollY * 0.5;
+            hero.style.transform = `translateY(${offset}px)`;
+        }
+    });
+    
+    lastScrollY = currentScrollY;
+}, { passive: true });
