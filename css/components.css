@@ -377,3 +377,51 @@
   max-width: 580px;
   margin: 0 auto;
 }
+
+/* ========================================
+   TESTIMONIALS
+   ======================================== */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.testimonial-quote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.testimonial-author strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ========================================
+   CARD ICON
+   ======================================== */
+
+.card-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: var(--space-md);
+}

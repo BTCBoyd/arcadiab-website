@@ -74,11 +74,36 @@
   font-size: 0.85rem;
   color: var(--text-secondary);
   cursor: pointer;
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  background: rgba(212, 168, 67, 0.1);
+  border: 1px solid rgba(212, 168, 67, 0.2);
+  font-weight: 600;
 }
 
 .lang-toggle:hover {
+  background: rgba(212, 168, 67, 0.15);
+  border-color: rgba(212, 168, 67, 0.3);
+}
+
+.lang-toggle::before {
+  content: 'ES';
   color: var(--gold);
+}
+
+.lang-toggle::after {
+  content: '/';
+  color: var(--text-muted);
+  margin: 0 0.15rem;
+}
+
+.lang-toggle .lang-inactive {
+  color: var(--text-muted);
+  opacity: 0.6;
 }
 
 /* Mobile Toggle */
