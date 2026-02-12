@@ -1,0 +1,319 @@
+/* ArcadiaB Design System */
+/* Global styles, reset, typography, design tokens */
+
+/* ========================================
+   FONTS
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* ========================================
+   DESIGN TOKENS
+   ======================================== */
+
+:root {
+  /* Primary Backgrounds */
+  --bg-primary: #0B0B1A;
+  --bg-secondary: #111128;
+  --bg-card: rgba(26, 26, 53, 0.7);
+  
+  /* Gold Accent - Signature ArcadiaB Color */
+  --gold: #D4A843;
+  --gold-light: #E8C76A;
+  --gold-dark: #B8922E;
+  
+  /* Orange - App Action Color */
+  --orange: #E8863A;
+  
+  /* Text Hierarchy */
+  --text-bright: #FFFFFF;
+  --text-primary: #E8E6E0;
+  --text-secondary: #9A98A8;
+  --text-muted: #6B6980;
+  
+  /* Functional Colors */
+  --green: #4ADE80;
+  --red: #EF4444;
+  
+  /* Borders */
+  --border: rgba(212, 168, 67, 0.15);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(212, 168, 67, 0.3);
+  
+  /* Gradients */
+  --gold-gradient: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-sans: 'DM Sans', 'Helvetica Neue', -apple-system, sans-serif;
+  
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 34px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-gold: 0 8px 32px rgba(212, 168, 67, 0.15);
+  
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Breakpoints (for reference in media queries) */
+  --bp-mobile: 768px;
+  --bp-tablet: 1024px;
+  --bp-desktop: 1280px;
+}
+
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-bright);
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--text-bright);
+}
+
+/* Small text / labels */
+.label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  font-weight: 700;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+/* Large body text */
+.text-lg {
+  font-size: 1.1rem;
+}
+
+/* Secondary text */
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Muted text */
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Gold accent text */
+.text-gold {
+  color: var(--gold);
+}
+
+/* ========================================
+   LAYOUT UTILITIES
+   ======================================== */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container-narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.section-sm {
+  padding: var(--space-2xl) 0;
+}
+
+/* Grid utilities */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Flexbox utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 0 var(--space-md);
+  }
+  
+  .section {
+    padding: var(--space-xl) 0;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.mt-0 { margin-top: 0; }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+.mb-0 { margin-bottom: 0; }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }

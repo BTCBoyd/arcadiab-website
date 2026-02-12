@@ -1,0 +1,50 @@
+# Netlify Configuration for ArcadiaB Website
+
+[build]
+  publish = "."
+  command = "echo 'No build needed - static site'"
+
+# Redirects for SPA-like behavior and clean URLs
+[[redirects]]
+  from = "/app/*"
+  to = "https://app.arcadiab.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://api.arcadiab.com/:splat"
+  status = 200
+  force = true
+
+# Custom 404 page (to be created in Phase 2)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Cache static assets
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

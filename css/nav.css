@@ -1,0 +1,182 @@
+/* ArcadiaB Navigation Styles */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(11, 11, 26, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 2rem;
+}
+
+/* Logo */
+.nav-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  letter-spacing: 0.02em;
+}
+
+.logo-btc {
+  color: var(--gold);
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+/* Nav Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btc-price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gold);
+  font-family: var(--font-sans);
+}
+
+.lang-toggle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.lang-toggle:hover {
+  color: var(--gold);
+}
+
+/* Mobile Toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--gold);
+  transition: all var(--transition-base);
+  border-radius: 2px;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Mega Menu (to be implemented with JS) */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-2xl) 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-base);
+}
+
+.mega-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--bg-secondary);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 2rem 2rem 2rem;
+    transition: right var(--transition-base);
+    border-left: 1px solid var(--border);
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .nav-toggle {
+    display: flex;
+  }
+  
+  .nav-actions {
+    gap: 1rem;
+  }
+  
+  .nav-actions .btn-primary {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .btc-price {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-actions .btn-text {
+    display: none;
+  }
+  
+  .lang-toggle {
+    display: none;
+  }
+}
