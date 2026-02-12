@@ -22,7 +22,7 @@
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="container">
-            <div class="nav-container">
+            <div class="nav-wrapper">
                 <a href="/" class="nav-logo">
                     <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
                 </a>
@@ -30,13 +30,38 @@
                 <div class="nav-menu" id="navMenu">
                     <a href="/#productos" class="nav-link">Productos</a>
                     <a href="/empresas" class="nav-link">Empresas</a>
-                    <a href="https://aprenderbitcoin.mx" target="_blank" class="nav-link">Aprende</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <a href="/nosotros" class="nav-link">Nosotros</a>
                 </div>
                 
                 <div class="nav-actions">
                     <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
-                    <span class="lang-toggle">ES/EN</span>
+                    <span class="lang-toggle" title="English version coming soon"><span class="lang-inactive">EN</span></span>
                     <a href="https://app.arcadiab.com/login" class="btn-text">Iniciar Sesión</a>
                     <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Regístrate</a>
                 </div>
@@ -289,17 +314,16 @@
                             </li>
                         </ul>
                         
-                        <!-- ConvertKit Form Embed (you'll need to add your form ID) -->
+                        <!-- ConvertKit Form -->
                         <div id="convertkit-form">
-                            <form action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="post" style="display: grid; gap: 1rem;">
-                                <input type="text" name="fields[first_name]" placeholder="Nombre" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
-                                <input type="email" name="email_address" placeholder="Email" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
+                            <form action="https://app.kit.com/forms/9081843/subscriptions" method="post" data-sv-form="9081843" data-uid="b657f1c5e7" style="display: grid; gap: 1rem;">
+                                <input type="email" name="email_address" placeholder="tu@email.com" required style="width: 100%; padding: 0.75rem; background: #1a1a2e; border: 1px solid #2a2a3e; border-radius: 8px; color: #E8E6E0;">
                                 <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
                                     Descargar Reporte PDF
                                 </button>
                             </form>
                             <p style="font-size: 0.875rem; color: #9A98A8; margin-top: 1rem; text-align: center;">
-                                Te enviaremos el PDF inmediatamente + insights mensuales
+                                Te enviaremos el PDF inmediatamente + insights mensuales de Bitcoin
                             </p>
                         </div>
                     </div>
