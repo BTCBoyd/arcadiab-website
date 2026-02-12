@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras Recurrentes de Bitcoin - ArcadiaB</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7QS7E2R8Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E7QS7E2R8Y');
+    </script>
+</head>
+<body>
+    <!-- Navigation (same as homepage) -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="/#productos" class="nav-link">Productos</a>
+                    <a href="/empresas" class="nav-link">Empresas</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer" class="mega-menu-item">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/nosotros" class="nav-link">Nosotros</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" title="English version coming soon"><span class="lang-inactive">EN</span></span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Iniciar Sesión</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Regístrate</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <div class="product-hero">
+                <div class="product-hero-content">
+                    <div class="card-tag">COMPRAS RECURRENTES</div>
+                    <h1 class="h1">Acumula Bitcoin automáticamente</h1>
+                    <p class="lead">
+                        Configura compras diarias, semanales o mensuales de Bitcoin. Cero comisiones. 
+                        La estrategia de los inversionistas más inteligentes del mundo: acumular consistentemente.
+                    </p>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                            Comienza ahora
+                        </a>
+                        <a href="#como-funciona" class="btn btn-ghost btn-lg">
+                            Cómo funciona
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div style="background: #0B0B1A; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; font-family: 'Red Hat Display', sans-serif;">
+                                    <div style="text-align: center; margin-bottom: 2rem;">
+                                        <div style="color: #9A98A8; font-size: 0.9rem; margin-bottom: 0.5rem;">Ahorro Inteligente Mensual</div>
+                                        <div style="color: #E8E6E0; font-size: 2.5rem; font-weight: 700;">$1,200 MXN</div>
+                                        <div style="color: #4ADE80; font-size: 0.9rem; margin-top: 0.5rem;">+ 18.2% ganancia total</div>
+                                    </div>
+                                    <div style="width: 100%; max-width: 280px; background: rgba(212, 168, 67, 0.1); border: 1px solid rgba(212, 168, 67, 0.2); border-radius: 12px; padding: 1.5rem;">
+                                        <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                                            <span style="color: #9A98A8; font-size: 0.9rem;">Frecuencia</span>
+                                            <span style="color: #E8E6E0; font-weight: 600;">Cada 15 días</span>
+                                        </div>
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <span style="color: #9A98A8; font-size: 0.9rem;">Total acumulado</span>
+                                            <span style="color: #4ADE80; font-weight: 600;">₿ 2,000 SAT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="como-funciona" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cómo Funciona</h2>
+            </div>
+            
+            <div class="steps-horizontal">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="h4">Configura tu plan</h3>
+                    <p>Elige cuánto quieres invertir y con qué frecuencia: diaria, semanal, quincenal o mensual.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="h4">Automatiza</h3>
+                    <p>Conecta tu método de pago. Nosotros nos encargamos de ejecutar las compras automáticamente.</p>
+                </div>
+                
+                <div class="step-arrow">→</div>
+                
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="h4">Acumula</h3>
+                    <p>Observa cómo tu stack de Bitcoin crece consistentemente, sin pensar en el precio ni el momento perfecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Details -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Detalles Clave</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="h4">📅 Frecuencias Disponibles</h3>
+                    <ul>
+                        <li>Diaria: Compra Bitcoin todos los días</li>
+                        <li>Semanal: Cada 7 días</li>
+                        <li>Quincenal: Cada 15 días</li>
+                        <li>Mensual: Una vez al mes</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">💰 Monto y Comisiones</h3>
+                    <ul>
+                        <li>Mínimo por compra: $100 MXN</li>
+                        <li>Máximo: Sin límite</li>
+                        <li>Comisión: 0% (gratis)</li>
+                        <li>Modifica o pausa en cualquier momento</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">📊 Estrategia DCA</h3>
+                    <ul>
+                        <li>Elimina el estrés de timing</li>
+                        <li>Promedia el precio de entrada</li>
+                        <li>Reduce el impacto de volatilidad</li>
+                        <li>Estrategia probada por instituciones</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="h4">🔄 Control Total</h3>
+                    <ul>
+                        <li>Modifica tu plan cuando quieras</li>
+                        <li>Pausa temporalmente</li>
+                        <li>Cancela sin penalización</li>
+                        <li>Retira tu Bitcoin en cualquier momento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Bridge -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(212, 168, 67, 0.1) 0%, rgba(212, 168, 67, 0.05) 100%);">
+        <div class="container">
+            <div class="content-bridge">
+                <div class="content-bridge-icon">📊</div>
+                <h2 class="h3">La estrategia de los inversionistas más sofisticados</h2>
+                <p class="lead">La acumulación constante (DCA) es la estrategia preferida por instituciones y family offices. Lee nuestra investigación sobre por qué funciona.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Aprende Bitcoin
+                    </a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                        Lee Capital Duro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+            
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué es DCA (Dollar-Cost Averaging)?</summary>
+                    <div class="faq-answer">
+                        <p>DCA es una estrategia de inversión donde compras una cantidad fija de Bitcoin a intervalos regulares, sin importar el precio. Esto promedia tu precio de entrada y reduce el impacto de la volatilidad a corto plazo. Es la estrategia preferida por inversionistas institucionales.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Puedo cambiar mi plan después de configurarlo?</summary>
+                    <div class="faq-answer">
+                        <p>Sí. Puedes modificar el monto, cambiar la frecuencia, pausar temporalmente o cancelar tu plan en cualquier momento. No hay penalizaciones ni comisiones por cambios.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Hay comisiones por compras recurrentes?</summary>
+                    <div class="faq-answer">
+                        <p>No. Las compras recurrentes son completamente gratuitas (0% comisión). Queremos hacer que acumular Bitcoin sea lo más accesible posible.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Qué pasa si no tengo fondos en la fecha de compra?</summary>
+                    <div class="faq-answer">
+                        <p>Si tu método de pago no tiene fondos suficientes, simplemente saltamos esa compra y continuamos con la siguiente según tu calendario. No hay penalizaciones.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Cuál es el mínimo por compra recurrente?</summary>
+                    <div class="faq-answer">
+                        <p>El mínimo es $100 MXN por compra. No hay máximo. Muchos de nuestros clientes empiezan con $500-1000 MXN semanales y ajustan según su flujo de efectivo.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">¿Puedo retirar mi Bitcoin acumulado?</summary>
+                    <div class="faq-answer">
+                        <p>Sí. Todo el Bitcoin que acumulas es tuyo y puedes retirarlo a tu propia wallet o venderlo en cualquier momento. No hay periodos de bloqueo ni restricciones.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Sell -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">También te puede interesar</h2>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-tag">COMPRA Y VENTA</div>
+                    <h3 class="card-title">Tu primer Bitcoin en minutos</h3>
+                    <p class="card-copy">
+                        ¿Prefieres comprar manualmente? Compra Bitcoin cuando tú decidas, desde cualquier banco mexicano.
+                    </p>
+                    <a href="/productos/compra-venta" class="btn-text">
+                        Conoce más <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-tag">BILLETERA</div>
+                    <h3 class="card-title">Custodia segura para tu Bitcoin</h3>
+                    <p class="card-copy">
+                        Almacena todo el Bitcoin que acumulas con custodia multifirma de grado institucional.
+                    </p>
+                    <a href="/productos/billetera" class="btn-text">
+                        Conoce más <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="h2">¿Listo para empezar?</h2>
+                <p class="lead">Crea tu cuenta y compra tu primer Bitcoin en minutos.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary btn-lg">
+                        Regístrate ahora
+                    </a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">
+                        ¿Tienes preguntas? Pregúntale a Maxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text mb-md">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p class="text-secondary">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Productos</h4>
+                    <a href="/productos/compra-venta">Compra y Venta</a>
+                    <a href="/productos/compras-recurrentes">Compras Recurrentes</a>
+                    <a href="/productos/prestamos-mxn">Préstamos MXN</a>
+                    <a href="/productos/prestamos-usd">Préstamos USD</a>
+                    <a href="/productos/b2x">B2X Leverage</a>
+                    <a href="/productos/stacker-inmobiliario">Stacker Inmobiliario</a>
+                    <a href="/productos/tarjeta-btc">Tarjeta BTC</a>
+                    <a href="/productos/billetera">Billetera</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Servicios</h4>
+                    <a href="/clientes-privados">Clientes Privados</a>
+                    <a href="/empresas">Empresas</a>
+                    <a href="/empresas#tesoreria">Tesorería BTC</a>
+                    <a href="/empresas#custodia">Custodia</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Aprende</h4>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">AprenderBitcoin</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">Pregúntale a Maxi</a>
+                    <a href="/#newsletter">Newsletter</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Empresa</h4>
+                    <a href="/nosotros">Nosotros</a>
+                    <a href="/seguridad">Seguridad</a>
+                    <a href="/regulacion">Regulación</a>
+                    <a href="/prensa">Prensa</a>
+                    <a href="/contacto">Soporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted">
+                    © 2026 ArcadiaB. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="/privacidad">Aviso de Privacidad</a>
+                    <a href="/terminos">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+</body>
+</html>
