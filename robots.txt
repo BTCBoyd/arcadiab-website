@@ -1,0 +1,11 @@
+# ArcadiaB robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://arcadaib.netlify.app/sitemap.xml
+
+# Block access to specific directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
