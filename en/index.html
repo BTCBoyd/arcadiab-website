@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcadiaB - Bitcoin Financial Services for Mexico</title>
+    <meta name="description" content="Compra, ahorra, pide préstamos y acumula Bitcoin desde México. Compatible con cualquier banco mexicano. Regulados ASOFOM y seguros. Comienza ahora.">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ArcadiaB — Tu Banco Bitcoin en México">
+    <meta property="og:description" content="Protege y haz crecer tu patrimonio con Bitcoin. Certificados ASOFOM. Desde 2017.">
+    <meta property="og:image" content="/assets/og-image.jpg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="nav-logo">
+                    <span class="logo-text">ARCADIA<span class="logo-btc">₿</span></span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#productos" class="nav-link">Products</a>
+                    <a href="/en/business" class="nav-link">Business</a>
+                    <a href="/en/treasury" class="nav-link">Treasury</a>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link nav-link-dropdown" data-dropdown="aprende">
+                            Aprende <span class="dropdown-arrow">▾</span>
+                        </a>
+                        <div class="mega-menu" id="aprende-menu">
+                            <div class="container">
+                                <div class="mega-menu-grid">
+                                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🎓</div>
+                                        <h3 class="mega-menu-title">AprenderBitcoin</h3>
+                                        <p class="mega-menu-desc">¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos en video te lleva de cero a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.</p>
+                                    </a>
+                                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">📊</div>
+                                        <h3 class="mega-menu-title">Capital Duro</h3>
+                                        <p class="mega-menu-desc">Investigación, análisis macro y casos de estudio sobre adopción Bitcoin para inversionistas profesionales, family offices y empresas.</p>
+                                    </a>
+                                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                                        <div class="mega-menu-icon">🤖</div>
+                                        <h3 class="mega-menu-title">Pregúntale a Maxi</h3>
+                                        <p class="mega-menu-desc">Interactúa con el primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, conectada a la red Bitcoin. Pregúntale lo que quieras.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/en/about" class="nav-link">About</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <span class="btc-price" id="btcPrice">₿ $XX,XXX</span>
+                    <span class="lang-toggle" href="/" title="Versión en español">ES</span>
+                    <a href="https://app.arcadiab.com/login" class="btn-text">Sign In</a>
+                    <a href="https://app.arcadiab.com/registro" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero section">
+        <div class="container">
+            <div class="hero-grid grid-2">
+                <div class="hero-content">
+                    <span class="badge mb-md">
+                        🟡 Certificados ASOFOM · Desde 2017
+                    </span>
+                    
+                    <h1 class="hero-title">
+                        Protege y Haz Crecer tu <span class="text-gold">Patrimonio</span> con Bitcoin
+                    </h1>
+                    
+                    <p class="hero-subtitle text-lg text-secondary">
+                        Compra, ahorra, pide préstamos y acumula Bitcoin desde México. 
+                        Compatible con cualquier banco mexicano. Regulados y seguros.
+                    </p>
+                    
+                    <div class="hero-ctas flex gap-md">
+                        <a href="https://app.arcadiab.com/registro" class="btn btn-primary">
+                            Comienza Ahora <span class="arrow">→</span>
+                        </a>
+                        <a href="#productos" class="btn btn-ghost">
+                            Explora Productos
+                        </a>
+                    </div>
+                    
+                    <div class="trust-pills flex gap-lg mt-lg">
+                        <span class="trust-pill">Compras recurrentes sin comisión</span>
+                        <span class="trust-pill">Soporte humano en México</span>
+                        <span class="trust-pill">Custodia multifirma</span>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-home-dashboard.jpg" alt="ArcadiaB App - Dashboard">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <span>ASOFOM Certificados</span> • 
+            <span>Desde 2017 — La empresa Bitcoin más antigua de México</span> • 
+            <span>Primera Tesorería Bitcoin de México</span> • 
+            <span>Soporte 24/7</span>
+        </div>
+    </div>
+    
+    <!-- Products Section -->
+    <section id="productos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">PRODUCTOS</div>
+                <h2 class="section-title">La mejor forma de acceder al activo más escaso del mundo</h2>
+                <p class="section-subtitle">
+                    Desde tu primera compra hasta estrategias avanzadas de apalancamiento — 
+                    ArcadiaB te acompaña en cada paso.
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1: Compra y Venta (FEATURED) -->
+                <div class="card card-product featured">
+                    <div>
+                        <div class="card-tag">BUY & SELL</div>
+                        <h3 class="card-title">Compra Bitcoin al instante</h3>
+                        <p class="card-copy">
+                            Compatible con cualquier banco en México. Compra y vende en segundos 
+                            con el tipo de cambio más competitivo. Sin complicaciones, sin demoras.
+                        </p>
+                        <a href="https://app.arcadiab.com/registro" class="btn-text">
+                            Empieza a comprar <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-conversion.jpg" alt="Compra Bitcoin">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2: Compras Recurrentes -->
+                <div class="card card-product">
+                    <div>
+                        <div class="card-tag">RECURRING PURCHASES</div>
+                        <h3 class="card-title">Accumulate Bitcoin automatically</h3>
+                        <p class="card-copy">
+                            Configura compras diarias, semanales o mensuales. Cero comisiones. 
+                            La estrategia de los inversionistas más inteligentes del mundo: 
+                            acumular consistentemente.
+                        </p>
+                        <a href="https://app.arcadiab.com/registro" class="btn-text">
+                            Configura tu plan <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-ahorro-inteligente-detail.jpg" alt="Ahorro Inteligente - Compras Recurrentes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3: Préstamos en Pesos -->
+                <div class="card card-product">
+                    <div>
+                        <div class="card-tag">PRÉSTAMOS EN PESOS</div>
+                        <h3 class="card-title">Liquidity without selling your Bitcoin</h3>
+                        <p class="card-copy">
+                            Préstamo en pesos mexicanos con tu BTC como garantía. Sin verificación 
+                            crediticia. Hasta 50% LTV. Instantáneo.
+                        </p>
+                        <a href="/en/products/prestamos-mxn" class="btn-text">
+                            Calcula tu préstamo <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-loan-calculator-mxn.jpg" alt="Préstamos MXN - Calculadora">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5: Tarjeta BTC Cash Back -->
+                <div class="card card-product">
+                    <div>
+                        <div class="card-tag">TARJETA</div>
+                        <h3 class="card-title">Earn Bitcoin on every purchase</h3>
+                        <p class="card-copy">
+                            Every daily purchase te acumula sats. Sin cambiar tu estilo de vida, 
+                            tu stack crece automáticamente.
+                        </p>
+                        <a href="/en/products/tarjeta-btc" class="btn-text">
+                            Solicita tu tarjeta <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/assets/screenshots/app-credit-card-cropped.jpg" alt="Tarjeta ArcadiaB - Cashback" style="object-fit: cover; object-position: top;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6: Stacker Inmobiliario -->
+                <div class="card card-product">
+                    <div>
+                        <div class="card-tag">REAL ESTATE STACKER</div>
+                        <h3 class="card-title">Tu propiedad. Más Bitcoin.</h3>
+                        <p class="card-copy">
+                            Transfiere el título de tu propiedad a nuestro fideicomiso y obtén un 
+                            préstamo para acumular más BTC. Tu inmueble trabaja para tu futuro en Bitcoin.
+                        </p>
+                        <a href="/en/products/stacker-inmobiliario.html" class="btn-text">
+                            Aprende más <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem; gap: 1rem;">
+                                    🏠 → 🏛️ → ₿
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Bitcoin Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">¿POR QUÉ BITCOIN?</div>
+                <h2 class="section-title">El activo que ha superado a todo lo demás en la última década</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
+                    <h3 class="card-title">Mejora tus rendimientos</h3>
+                    <p class="card-copy">
+                        Bitcoin ha superado a cualquier otra clase de activo en la última década. 
+                        Añadirlo a tu portafolio mejora tus retornos ajustados por riesgo.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+                    <h3 class="card-title">Protege tu patrimonio</h3>
+                    <p class="card-copy">
+                        Solo existirán 21 millones de Bitcoin. El peso mexicano ha perdido más 
+                        del 99% de su poder adquisitivo. Bitcoin es la respuesta a la devaluación.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏛️</div>
+                    <h3 class="card-title">Regulado en México</h3>
+                    <p class="card-copy">
+                        ArcadiaB opera bajo certificación ASOFOM con estructura de fideicomiso fiduciario. 
+                        Tus activos están protegidos bajo el marco regulatorio mexicano.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Content Bridge -->
+            <div class="content-bridge">
+                <div class="bridge-icon">🎓</div>
+                <h4 class="bridge-title">¿Quieres profundizar?</h4>
+                <p class="bridge-description">
+                    La devaluación del peso, la política monetaria de Banxico, y por qué Bitcoin 
+                    es la respuesta más sólida para proteger tu patrimonio. Explora investigación, 
+                    datos de mercado y casos de estudio en nuestro sitio de análisis financiero.
+                </p>
+                <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                    Visita Capital Duro <span class="arrow">→</span>
+                </a>
+                
+                <p class="bridge-description mt-lg">
+                    ¿Nuevo en Bitcoin? Nuestro curso gratuito de 10 capítulos te lleva de cero 
+                    a comprender completamente cómo Bitcoin protege y hace crecer tu patrimonio.
+                </p>
+                <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                    Empieza AprenderBitcoin <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust & Authority Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">CONFIANZA</div>
+                <h2 class="section-title">Estamos contigo en cada paso</h2>
+                <p class="section-subtitle">
+                    Construimos la infraestructura financiera Bitcoin más segura y regulada de México.
+                </p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🇲🇽</div>
+                    <h3 class="card-title">Regulados en México</h3>
+                    <p class="card-copy">
+                        Certificación ASOFOM. Fideicomiso fiduciario. Cumplimiento total con 
+                        regulaciones mexicanas.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔒</div>
+                    <h3 class="card-title">Custodia Multifirma</h3>
+                    <p class="card-copy">
+                        Tu Bitcoin se almacena en frío con múltiples firmas requeridas para 
+                        cualquier transacción.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">📞</div>
+                    <h3 class="card-title">Soporte Humano</h3>
+                    <p class="card-copy">
+                        Equipo mexicano disponible. Asesoría personalizada para clientes privados.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">₿</div>
+                    <h3 class="card-title">Solo Bitcoin</h3>
+                    <p class="card-copy">
+                        Enfocados exclusivamente en Bitcoin y stablecoins. Productos construidos 
+                        por Bitcoiners.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏠</div>
+                    <h3 class="card-title">Desde 2017</h3>
+                    <p class="card-copy">
+                        La empresa de Bitcoin más antigua y grande de México. Casi una década construyendo.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🤖</div>
+                    <h3 class="card-title">Tecnología de Punta</h3>
+                    <p class="card-copy">
+                        Maxi, nuestro agente de IA, te asiste 24/7. El único agente en el mundo que 
+                        corre sobre infraestructura Bitcoin real.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Clientes Privados & Empresas Teasers -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-tag">PRIVATE CLIENTS</div>
+                    <h3 class="card-title">¿Inversión mayor a $2 millones MXN?</h3>
+                    <p class="card-copy">
+                        Nuestro equipo de Clientes Privados te asigna un asesor dedicado con atención 
+                        personalizada, límites elevados y acceso a productos exclusivos.
+                    </p>
+                    <a href="/en/private-clients" class="btn btn-primary">
+                        Descubre Clientes Privados <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-tag">BUSINESS</div>
+                    <h3 class="card-title">Bitcoin for your company treasury</h3>
+                    <p class="card-copy">
+                        Invierte en Bitcoin y fortalece tu balance. Incorpora Bitcoin como activo 
+                        de tesorería. Onboarding completo en 24 horas.
+                    </p>
+                    <a href="/en/business" class="btn btn-ghost">
+                        Conoce más <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section" style="background: #0F0F1E;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">TESTIMONIOS</div>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="card testimonial-card">
+                    <p class="testimonial-quote">
+                        "ArcadiaB me permitió acceder a liquidez en pesos sin vender mi Bitcoin durante la corrección de mercado. Eso fue la diferencia entre pánico y estrategia."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>R.M.</strong>
+                        <span class="text-muted">Inversionista Privado · CDMX</span>
+                    </div>
+                </div>
+                
+                <div class="card testimonial-card">
+                    <p class="testimonial-quote">
+                        "La estructura de fideicomiso ASOFOM nos dio la confianza para mover nuestra tesorería corporativa. Ninguna otra empresa en México ofrece este nivel de regulación."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>A.S.</strong>
+                        <span class="text-muted">CFO, Empresa Tecnológica · MTY</span>
+                    </div>
+                </div>
+                
+                <div class="card testimonial-card">
+                    <p class="testimonial-quote">
+                        "Uso la tarjeta BTC Cash Back para todos mis gastos diarios. En 6 meses he acumulado más sats que lo que imaginaba. Es la forma más fácil de empezar."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>J.P.L.</strong>
+                        <span class="text-muted">Profesionista · GDL</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; color: #6A6878; font-size: 0.875rem; margin-top: 2rem;">
+                * Testimonios ilustrativos basados en experiencias típicas de clientes
+            </p>
+        </div>
+    </section>
+    
+    <!-- Learn Section -->
+    <section class="section" id="aprende">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">APRENDE</div>
+                <h2 class="section-title">Tu Educación Bitcoin Comienza Aquí</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3 class="card-title">¿Nuevo en Bitcoin?</h3>
+                    <p class="card-copy">
+                        Nuestro curso gratuito de 10 capítulos te lleva de cero a dominar Bitcoin. 
+                        Videos profesionales, contenido interactivo y una comunidad de aprendizaje.
+                    </p>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">
+                        Empieza a aprender <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Investigación para inversionistas</h3>
+                    <p class="card-copy">
+                        Análisis macro, casos de estudio de empresas que adoptan Bitcoin, columnas de 
+                        expertos invitados y datos de mercado en tiempo real.
+                    </p>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">
+                        Lee Capital Duro <span class="arrow">→</span>
+                    </a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <h3 class="card-title">Tu asesora Bitcoin 24/7</h3>
+                    <p class="card-copy">
+                        El primer agente de IA nativo de Bitcoin del mundo. Respaldada por investigación, 
+                        conectada a la red Bitcoin en tiempo real. Pregúntale lo que quieras, en cualquier momento.
+                    </p>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">
+                        Habla con Maxi <span class="arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter CTA -->
+    <section class="section" id="newsletter">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">NEWSLETTER</div>
+                <h2 class="section-title">Perspectivas del mercado de Bitcoin</h2>
+                <p class="section-subtitle">
+                    Directamente en tu correo. Sin spam. Solo perspectivas que importan.
+                </p>
+            </div>
+            
+            <form class="newsletter-form" id="newsletterForm" action="https://app.kit.com/forms/9081843/subscriptions" method="post" data-sv-form="9081843" data-uid="b657f1c5e7">
+                <input type="email" class="form-input" name="email_address" placeholder="tu@email.com" required>
+                <button type="submit" class="btn btn-primary">Suscríbete</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text mb-md">ARCADIA<span class="logo-btc">₿</span></div>
+                    <p class="text-secondary">
+                        México's primera empresa de tesorería Bitcoin. Certificados ASOFOM. Desde 2017.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <a href="/en/products/compra-venta">Compra y Venta</a>
+                    <a href="/en/products/compras-recurrentes">Compras Recurrentes</a>
+                    <a href="/en/products/prestamos-mxn">Préstamos MXN</a>
+                    <a href="/en/products/prestamos-usd">Préstamos USD</a>
+                    <a href="/en/products/stacker-inmobiliario">Stacker Inmobiliario</a>
+                    <a href="/en/products/tarjeta-btc">Tarjeta BTC</a>
+                    <a href="/en/products/billetera">Billetera</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Servicios</h4>
+                    <a href="/en/private-clients">Clientes Privados</a>
+                    <a href="/en/business">Business</a>
+                    <a href="/empresas#tesoreria">Tesorería BTC</a>
+                    <a href="/empresas#custodia">Custodia</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Learn</h4>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">AprenderBitcoin</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">Pregúntale a Maxi</a>
+                    <a href="#newsletter">Newsletter</a>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Ecosistema ArcadiaB</h4>
+                    <a href="https://arcadiab.com">ArcadiaB.com</a>
+                    <a href="https://capitalduro.mx" target="_blank" rel="noopener noreferrer">Capital Duro</a>
+                    <a href="https://aprenderbitcoin.mx" target="_blank" rel="noopener noreferrer">Aprender Bitcoin</a>
+                    <a href="https://maximoon.netlify.app" target="_blank" rel="noopener noreferrer">MaxiMoon</a>
+                </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Empresa</h4>
+                    <a href="/en/about">About</a>
+                    <a href="/en/security">Seguridad</a>
+                    <a href="/en/regulation">Regulación</a>
+                    <a href="/en/press">Prensa</a>
+                    <a href="/en/contact">Soporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-muted">
+                    © 2026 ArcadiaB. Todos los derechos reservados.
+                </p>
+                <div class="footer-legal">
+                    <a href="/en/privacy">Aviso de Privacidad</a>
+                    <a href="/en/terms">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Maxi Chat Widget -->
+    <button class="maxi-widget" id="maxiWidget" aria-label="Pregúntale a Maxi">
+        ₿
+    </button>
+    
+    <!-- Scripts -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/animations.js"></script>
+    <script src="/js/maxi-widget.js"></script>
+</body>
+</html>
