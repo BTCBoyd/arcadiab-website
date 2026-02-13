@@ -25,9 +25,11 @@
 }
 
 .logo-img {
-  height: 40px;
+  height: 32px;
   width: auto;
+  max-width: 200px;
   display: block;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -45,7 +47,8 @@
 /* Responsive logo sizing */
 @media (max-width: 768px) {
   .logo-img {
-    height: 32px;
+    height: 24px;
+    max-width: 150px;
   }
 }
 
