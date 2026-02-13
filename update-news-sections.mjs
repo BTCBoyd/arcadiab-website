@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Update News Sections in About Pages
- * Reads news-articles.json and updates nosotros.html + en/about.html
+ * Update News Sections in Press Pages
+ * Reads news-articles.json and updates prensa.html + en/press.html
  * 
  * Usage: node update-news-sections.mjs
  */
@@ -9,8 +9,8 @@
 import { readFileSync, writeFileSync } from 'fs';
 
 const newsFile = './news-articles.json';
-const nosotrosFile = './nosotros.html';
-const aboutFile = './en/about.html';
+const prensaFile = './prensa.html';
+const pressFile = './en/press.html';
 
 console.log('📰 Updating news sections...');
 
@@ -102,32 +102,32 @@ function translateDescriptionToEnglish(desc) {
   return map[desc] || desc;
 }
 
-// Update nosotros.html
-const nosotrosHTML = readFileSync(nosotrosFile, 'utf-8');
+// Update prensa.html
+const prensaHTML = readFileSync(prensaFile, 'utf-8');
 const spanishNewsHTML = generateSpanishHTML(topArticles);
 
-const nosotrosUpdated = nosotrosHTML.replace(
-  /(<div class="grid-2" style="max-width: 900px; margin: 0 auto;">)([\s\S]*?)(<\/div>\s*<div style="text-align: center; margin-top: 3rem;">)/,
+const prensaUpdated = prensaHTML.replace(
+  /(<div class="grid-2" style="max-width: 900px; margin: 0 auto;" id="press-articles">)([\s\S]*?)(<\/div>\s*<\/div>\s*<\/section>)/,
   `$1\n${spanishNewsHTML}\n            $3`
 );
 
-writeFileSync(nosotrosFile, nosotrosUpdated);
-console.log('   ✅ Updated nosotros.html');
+writeFileSync(prensaFile, prensaUpdated);
+console.log('   ✅ Updated prensa.html');
 
-// Update en/about.html
-const aboutHTML = readFileSync(aboutFile, 'utf-8');
+// Update en/press.html
+const pressHTML = readFileSync(pressFile, 'utf-8');
 const englishNewsHTML = generateEnglishHTML(topArticles);
 
-const aboutUpdated = aboutHTML.replace(
-  /(<div class="grid-2" style="max-width: 900px; margin: 0 auto;">)([\s\S]*?)(<\/div>\s*<div style="text-align: center; margin-top: 3rem;">)/,
+const pressUpdated = pressHTML.replace(
+  /(<div class="grid-2" style="max-width: 900px; margin: 0 auto;" id="press-articles">)([\s\S]*?)(<\/div>\s*<\/div>\s*<\/section>)/,
   `$1\n${englishNewsHTML}\n            $3`
 );
 
-writeFileSync(aboutFile, aboutUpdated);
-console.log('   ✅ Updated en/about.html');
+writeFileSync(pressFile, pressUpdated);
+console.log('   ✅ Updated en/press.html');
 
 console.log('\n✅ News sections updated!');
 console.log('\n💡 Next steps:');
-console.log('   git add nosotros.html en/about.html');
-console.log('   git commit -m "Update news sections from JSON"');
+console.log('   git add prensa.html en/press.html');
+console.log('   git commit -m "Update press articles from JSON"');
 console.log('   git push');
