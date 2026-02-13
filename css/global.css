@@ -198,6 +198,8 @@ strong {
 
 .section {
   padding: var(--space-3xl) 0;
+  position: relative;
+  z-index: 1;
 }
 
 .section-sm {
