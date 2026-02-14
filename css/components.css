@@ -545,3 +545,102 @@
         bottom: -15px;
     }
 }
+
+/* ========================================
+   PROBLEM & STEPS SECTIONS (StoryBrand)
+   ======================================== */
+
+/* Primary CTA - Orange highlight for main actions */
+.btn-cta-primary {
+  background: var(--orange) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 32px rgba(232, 134, 58, 0.25);
+}
+
+.btn-cta-primary:hover {
+  background: linear-gradient(135deg, var(--orange), #D47232) !important;
+  box-shadow: 0 12px 40px rgba(232, 134, 58, 0.35);
+}
+
+/* Problem Grid */
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+.problem-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.problem-card:hover {
+  border-color: rgba(239, 68, 68, 0.4);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.problem-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+/* Steps Grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+.step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.step-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-gold);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--gold-gradient);
+  color: var(--bg-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+}
+
+/* Dark background utility */
+.bg-dark {
+  background: var(--bg-secondary);
+}
+
+/* Utility color classes */
+.text-error {
+  color: var(--red);
+}
+
+.text-warning {
+  color: #FFA500;
+}
+
+.text-success {
+  color: var(--green);
+}

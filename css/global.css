@@ -384,3 +384,15 @@ strong {
     --border: #FFFFFF;
   }
 }
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.center {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
