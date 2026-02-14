@@ -104,22 +104,7 @@
 .lang-toggle:hover {
   background: rgba(212, 168, 67, 0.15);
   border-color: rgba(212, 168, 67, 0.3);
-}
-
-.lang-toggle::before {
-  content: 'ES';
   color: var(--gold);
-}
-
-.lang-toggle::after {
-  content: '/';
-  color: var(--text-muted);
-  margin: 0 0.15rem;
-}
-
-.lang-toggle .lang-inactive {
-  color: var(--text-muted);
-  opacity: 0.6;
 }
 
 /* Mobile Toggle */
