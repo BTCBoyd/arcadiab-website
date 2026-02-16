@@ -1,0 +1,402 @@
+/* ========================================
+   MOBILE OPTIMIZATION - ArcadiaB
+   Enhanced mobile experience fixes
+   Created: 2026-02-16
+   ======================================== */
+
+/* BASE MOBILE IMPROVEMENTS */
+@media (max-width: 768px) {
+  
+  /* Better text readability */
+  body {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Larger touch targets (minimum 44x44px) */
+  .btn,
+  .btn-primary,
+  .btn-secondary,
+  .nav-link,
+  button,
+  a.btn {
+    min-height: 44px;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Hero section - better mobile layout */
+  .hero {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    min-height: auto;
+  }
+  
+  .hero-content {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .hero h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+  }
+  
+  /* CTA buttons - stack vertically with more spacing */
+  .hero-cta {
+    flex-direction: column;
+    gap: var(--space-md);
+    width: 100%;
+  }
+  
+  .hero-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Cards - better spacing */
+  .card {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Grid layouts - proper stacking */
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  /* Stats - larger, more readable */
+  .stat-number {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    margin-top: var(--space-xs);
+  }
+  
+  /* Forms - larger inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select {
+    font-size: 16px; /* Prevents iOS zoom */
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+  }
+  
+  textarea {
+    min-height: 120px;
+  }
+  
+  /* Spacing improvements */
+  .section {
+    padding: var(--space-xl) 0;
+  }
+  
+  .container {
+    padding: 0 var(--space-md);
+  }
+  
+  /* Navigation fixes */
+  .nav-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-lg);
+    gap: var(--space-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    border-top: 1px solid var(--border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .nav-link {
+    font-size: 1.125rem;
+    padding: 0.75rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  /* Mega menu mobile */
+  .mega-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-top: var(--space-sm);
+  }
+  
+  .mega-menu-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .mega-menu-grid a {
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+  }
+  
+  .mega-menu-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .mega-menu-title {
+    font-size: 1.125rem;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .mega-menu-desc {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  /* Footer improvements */
+  .footer {
+    padding: var(--space-xl) 0;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    text-align: center;
+  }
+  
+  .footer-section {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  
+  .footer-section:last-child {
+    border-bottom: none;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .footer-link {
+    font-size: 0.938rem;
+    padding: 0.5rem 0;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+    padding-top: var(--space-lg);
+  }
+  
+  /* Product cards */
+  .product-card {
+    padding: var(--space-lg);
+  }
+  
+  .product-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+  }
+  
+  .product-title {
+    font-size: 1.375rem;
+    margin-bottom: var(--space-sm);
+  }
+  
+  /* Feature lists */
+  .feature-list {
+    gap: var(--space-md);
+  }
+  
+  .feature-item {
+    padding: var(--space-md);
+  }
+  
+  .feature-icon {
+    min-width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+  
+  .feature-title {
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .feature-text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  /* Trust badges */
+  .trust-badge {
+    padding: var(--space-md);
+    min-height: 80px;
+  }
+  
+  .trust-badge-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .trust-badge-text {
+    font-size: 0.875rem;
+  }
+  
+  /* Images - responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Video embeds */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Better table handling */
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Hide desktop-only elements */
+  .desktop-only {
+    display: none !important;
+  }
+  
+  /* Show mobile-only elements */
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+/* SMALL MOBILE (< 375px) */
+@media (max-width: 374px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.375rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.938rem;
+  }
+}
+
+/* HORIZONTAL MOBILE (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+    min-height: auto;
+  }
+  
+  .nav-menu {
+    max-height: calc(100vh - 60px);
+  }
+}
+
+/* TOUCH IMPROVEMENTS */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover states on touch devices */
+  .btn:hover,
+  .nav-link:hover,
+  .card:hover {
+    transform: none;
+  }
+  
+  /* Larger touch targets */
+  a, button, input, select, textarea {
+    min-height: 44px;
+  }
+  
+  /* Prevent double-tap zoom */
+  a, button {
+    touch-action: manipulation;
+  }
+}
+
+/* ACCESSIBILITY - Respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* HIGH CONTRAST MODE */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 2px solid currentColor;
+  }
+  
+  .card {
+    border: 2px solid var(--border);
+  }
+}
