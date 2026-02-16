@@ -406,15 +406,18 @@
    Critical issues for conversion optimization
    ======================================== */
 
-/* STACKER INMOBILIARIO - Hide iPhone frame on mobile */
+/* STACKER INMOBILIARIO - Direct graphic (no phone frame since OTC service) */
 @media (max-width: 768px) {
-  .card-product:has(.card-tag:contains("STACKER INMOBILIARIO")) .phone-mockup {
-    display: none;
+  /* Stacker uses direct graphic, not phone mockup */
+  .products-grid .card-product:nth-child(6) .product-graphic {
+    max-width: 280px;
+    margin: 1.5rem auto 0;
   }
   
-  /* Alternative selector in case :has() not supported */
-  .products-grid .card-product:nth-child(6) .phone-mockup {
-    display: none;
+  .products-grid .card-product:nth-child(6) .product-graphic img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
   }
   
   /* Ensure Stacker description is full-width and readable */
