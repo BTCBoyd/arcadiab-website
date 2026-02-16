@@ -549,9 +549,29 @@
   }
 }
 
-/* TRUST BAR / STATS - Better wrapping */
+/* TRUST BAR - Desktop bullets, mobile stacking */
+.trust-bar span:not(:last-child)::after {
+  content: " • ";
+  margin: 0 var(--space-sm);
+}
+
 @media (max-width: 768px) {
-  .trust-bar,
+  .trust-bar .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .trust-bar span:not(:last-child)::after {
+    content: none; /* Remove bullets on mobile */
+  }
+  
+  .trust-bar span {
+    margin: 0;
+  }
+  
+  /* STATS GRID - Better wrapping */
   .stats-grid {
     display: flex;
     flex-wrap: wrap;
