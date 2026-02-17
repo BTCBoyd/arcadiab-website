@@ -123,6 +123,16 @@
   }
   
   /* Navigation fixes */
+  /* Ensure nav header stays fixed at top on mobile */
+  .nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
   .nav-menu {
     position: fixed;
     top: 60px;
