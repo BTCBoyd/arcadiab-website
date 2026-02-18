@@ -2,6 +2,13 @@
 // Handles mobile menu toggle and mega-menu interactions
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Ensure mobile pages start at top (Fix #2)
+  if (window.innerWidth <= 768) {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
+  
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
   const nav = document.getElementById('nav');
@@ -66,7 +73,91 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Fetch and display BTC price (optional enhancement)
   fetchBTCPrice();
+  
+  // Handle language switching with proper page mapping (Fix #3 & #4)
+  setupLanguageToggle();
 });
+
+// Language toggle with intelligent page mapping
+function setupLanguageToggle() {
+  const langSwitch = document.getElementById('langSwitch');
+  if (!langSwitch) return;
+  
+  const currentPath = window.location.pathname;
+  const isEnglish = currentPath.startsWith('/en/');
+  
+  // Map Spanish pages to English pages
+  const es2en = {
+    '/': '/en/',
+    '/index.html': '/en/index.html',
+    '/empresas': '/en/business',
+    '/empresas.html': '/en/business.html',
+    '/nosotros': '/en/about',
+    '/nosotros.html': '/en/about.html',
+    '/treasury': '/en/treasury',
+    '/treasury.html': '/en/treasury.html',
+    '/contacto': '/en/contact',
+    '/contacto.html': '/en/contact.html',
+    '/prensa': '/en/press',
+    '/prensa.html': '/en/press.html',
+    '/privacidad': '/en/privacy',
+    '/privacidad.html': '/en/privacy.html',
+    '/clientes-privados': '/en/private-clients',
+    '/clientes-privados.html': '/en/private-clients.html',
+    '/terminos': '/en/terms',
+    '/terminos.html': '/en/terms.html',
+    '/regulacion': '/en/regulation',
+    '/regulacion.html': '/en/regulation.html',
+    '/seguridad': '/en/security',
+    '/seguridad.html': '/en/security.html',
+    '/gracias': '/en/thank-you',
+    '/gracias.html': '/en/thank-you.html'
+  };
+  
+  // Map English pages to Spanish pages (reverse mapping)
+  const en2es = {
+    '/en/': '/',
+    '/en/index.html': '/index.html',
+    '/en/business': '/empresas',
+    '/en/business.html': '/empresas.html',
+    '/en/about': '/nosotros',
+    '/en/about.html': '/nosotros.html',
+    '/en/treasury': '/treasury',
+    '/en/treasury.html': '/treasury.html',
+    '/en/contact': '/contacto',
+    '/en/contact.html': '/contacto.html',
+    '/en/press': '/prensa',
+    '/en/press.html': '/prensa.html',
+    '/en/privacy': '/privacidad',
+    '/en/privacy.html': '/privacidad.html',
+    '/en/private-clients': '/clientes-privados',
+    '/en/private-clients.html': '/clientes-privados.html',
+    '/en/terms': '/terminos',
+    '/en/terms.html': '/terminos.html',
+    '/en/regulation': '/regulacion',
+    '/en/regulation.html': '/regulacion.html',
+    '/en/security': '/seguridad',
+    '/en/security.html': '/seguridad.html',
+    '/en/thank-you': '/gracias',
+    '/en/thank-you.html': '/gracias.html'
+  };
+  
+  langSwitch.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    let targetPath;
+    
+    if (isEnglish) {
+      // English to Spanish
+      targetPath = en2es[currentPath] || '/';
+    } else {
+      // Spanish to English
+      targetPath = es2en[currentPath] || '/en/';
+    }
+    
+    window.location.href = targetPath;
+  });
+}
 
 // Fetch Bitcoin price (placeholder - can be enhanced with real API)
 function fetchBTCPrice() {

@@ -12,6 +12,12 @@
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  /* Ensure page starts at top on mobile */
+  html {
+    scroll-behavior: smooth;
   }
   
   /* Larger touch targets (minimum 44x44px) */
@@ -131,6 +137,14 @@
     right: 0;
     width: 100%;
     z-index: 1000;
+  }
+  
+  /* Remove sticky signup - let it scroll naturally */
+  .signup-sticky,
+  .auth-section-sticky,
+  .login-register-sticky {
+    position: static !important;
+    top: auto !important;
   }
   
   .nav-menu {
